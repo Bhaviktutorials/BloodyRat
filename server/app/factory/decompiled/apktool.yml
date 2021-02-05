@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: com.just-hack.BloodyRat_obfuscated.apk
+apkFileName: com.justhack.BloodyRat_obfuscated.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
