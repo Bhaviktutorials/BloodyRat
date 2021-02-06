@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/AppUpdate;
+.class public Lcom/justhack/hackapk/AppUpdate;
 .super Ljava/lang/Object;
 .source "AppUpdate.java"
 
