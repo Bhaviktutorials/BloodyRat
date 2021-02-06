@@ -1,11 +1,11 @@
-.class public Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;
+.class public Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "ScreenRecorderService.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/ScreenRecorderService;
+    value = Lcom/justhack/hackapk/ScreenRecorderService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field private final this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+.field private final this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
 
 # direct methods
-.method public constructor <init>(Lcom/hax4us/haxrat/ScreenRecorderService;)V
+.method public constructor <init>(Lcom/justhack/hackapk/ScreenRecorderService;)V
     .locals 5
 
     .prologue
@@ -36,19 +36,19 @@
 
     move-object v4, v1
 
-    iput-object v4, v3, Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iput-object v4, v3, Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
     return-void
 .end method
 
-.method static access$0(Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;)Lcom/hax4us/haxrat/ScreenRecorderService;
+.method static access$0(Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;)Lcom/justhack/hackapk/ScreenRecorderService;
     .locals 4
 
     move-object v0, p0
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v3, v3, Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
     move-object v0, v3
 
@@ -107,25 +107,25 @@
     .line 84
     move-object v7, v0
 
-    iget-object v7, v7, Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v7, v7, Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
     move-object v8, v0
 
-    iget-object v8, v8, Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v8, v8, Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
-    invoke-static {v8}, Lcom/hax4us/haxrat/ScreenRecorderService;->access$L1000004(Lcom/hax4us/haxrat/ScreenRecorderService;)I
+    invoke-static {v8}, Lcom/justhack/hackapk/ScreenRecorderService;->access$L1000004(Lcom/justhack/hackapk/ScreenRecorderService;)I
 
     move-result v8
 
     move-object v9, v0
 
-    iget-object v9, v9, Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v9, v9, Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
-    invoke-static {v9}, Lcom/hax4us/haxrat/ScreenRecorderService;->access$L1000005(Lcom/hax4us/haxrat/ScreenRecorderService;)Landroid/content/Intent;
+    invoke-static {v9}, Lcom/justhack/hackapk/ScreenRecorderService;->access$L1000005(Lcom/justhack/hackapk/ScreenRecorderService;)Landroid/content/Intent;
 
     move-result-object v9
 
-    invoke-static {v7, v8, v9}, Lcom/hax4us/haxrat/ScreenRecorderService;->access$1000015(Lcom/hax4us/haxrat/ScreenRecorderService;ILandroid/content/Intent;)V
+    invoke-static {v7, v8, v9}, Lcom/justhack/hackapk/ScreenRecorderService;->access$1000015(Lcom/justhack/hackapk/ScreenRecorderService;ILandroid/content/Intent;)V
 
     .line 92
     :cond_0
@@ -149,9 +149,9 @@
     .line 87
     move-object v7, v0
 
-    iget-object v7, v7, Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v7, v7, Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
-    invoke-static {v7}, Lcom/hax4us/haxrat/ScreenRecorderService;->access$1000016(Lcom/hax4us/haxrat/ScreenRecorderService;)V
+    invoke-static {v7}, Lcom/justhack/hackapk/ScreenRecorderService;->access$1000016(Lcom/justhack/hackapk/ScreenRecorderService;)V
 
     .line 88
     goto :goto_0
@@ -172,32 +172,32 @@
     .line 90
     move-object v7, v0
 
-    iget-object v7, v7, Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v7, v7, Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
-    invoke-static {v7}, Lcom/hax4us/haxrat/ScreenRecorderService;->access$1000016(Lcom/hax4us/haxrat/ScreenRecorderService;)V
+    invoke-static {v7}, Lcom/justhack/hackapk/ScreenRecorderService;->access$1000016(Lcom/justhack/hackapk/ScreenRecorderService;)V
 
     .line 91
     move-object v7, v0
 
-    iget-object v7, v7, Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v7, v7, Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
     move-object v8, v0
 
-    iget-object v8, v8, Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v8, v8, Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
-    invoke-static {v8}, Lcom/hax4us/haxrat/ScreenRecorderService;->access$L1000004(Lcom/hax4us/haxrat/ScreenRecorderService;)I
+    invoke-static {v8}, Lcom/justhack/hackapk/ScreenRecorderService;->access$L1000004(Lcom/justhack/hackapk/ScreenRecorderService;)I
 
     move-result v8
 
     move-object v9, v0
 
-    iget-object v9, v9, Lcom/hax4us/haxrat/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/hax4us/haxrat/ScreenRecorderService;
+    iget-object v9, v9, Lcom/justhack/hackapk/ScreenRecorderService$MyBroadcastReceiver;->this$0:Lcom/justhack/hackapk/ScreenRecorderService;
 
-    invoke-static {v9}, Lcom/hax4us/haxrat/ScreenRecorderService;->access$L1000005(Lcom/hax4us/haxrat/ScreenRecorderService;)Landroid/content/Intent;
+    invoke-static {v9}, Lcom/justhack/hackapk/ScreenRecorderService;->access$L1000005(Lcom/justhack/hackapk/ScreenRecorderService;)Landroid/content/Intent;
 
     move-result-object v9
 
-    invoke-static {v7, v8, v9}, Lcom/hax4us/haxrat/ScreenRecorderService;->access$1000015(Lcom/hax4us/haxrat/ScreenRecorderService;ILandroid/content/Intent;)V
+    invoke-static {v7, v8, v9}, Lcom/justhack/hackapk/ScreenRecorderService;->access$1000015(Lcom/justhack/hackapk/ScreenRecorderService;ILandroid/content/Intent;)V
 
     .line 92
     goto :goto_0
