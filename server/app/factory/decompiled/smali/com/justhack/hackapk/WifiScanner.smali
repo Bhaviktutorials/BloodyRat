@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/WifiScanner;
+.class public Lcom/justhack/hackapk/WifiScanner;
 .super Ljava/lang/Object;
 .source "WifiScanner.java"
 
