@@ -1,4 +1,4 @@
-.class public final Lcom/hax4us/haxrat/BuildConfig;
+.class public final Lcom/justhack/hackapk/BuildConfig;
 .super Ljava/lang/Object;
 .source "BuildConfig.java"
 
