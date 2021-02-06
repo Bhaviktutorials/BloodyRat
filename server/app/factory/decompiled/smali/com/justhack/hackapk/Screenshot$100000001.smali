@@ -1,4 +1,4 @@
-.class Lcom/hax4us/haxrat/Screenshot$100000001;
+.class Lcom/justhack/hackapk/Screenshot$100000001;
 .super Ljava/lang/Object;
 .source "Screenshot.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/Screenshot;
+    value = Lcom/justhack/hackapk/Screenshot;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,13 +18,13 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/hax4us/haxrat/Screenshot$100000001$100000000;
+        Lcom/justhack/hackapk/Screenshot$100000001$100000000;
     }
 .end annotation
 
 
 # instance fields
-.field private final this$0:Lcom/hax4us/haxrat/Screenshot;
+.field private final this$0:Lcom/justhack/hackapk/Screenshot;
 
 .field private final val$height:I
 
@@ -38,7 +38,7 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/hax4us/haxrat/Screenshot;Landroid/media/projection/MediaProjection;IILandroid/graphics/Point;Landroid/hardware/display/VirtualDisplay;)V
+.method constructor <init>(Lcom/justhack/hackapk/Screenshot;Landroid/media/projection/MediaProjection;IILandroid/graphics/Point;Landroid/hardware/display/VirtualDisplay;)V
     .locals 10
 
     move-object v0, p0
@@ -63,49 +63,49 @@
 
     move-object v9, v1
 
-    iput-object v9, v8, Lcom/hax4us/haxrat/Screenshot$100000001;->this$0:Lcom/hax4us/haxrat/Screenshot;
+    iput-object v9, v8, Lcom/justhack/hackapk/Screenshot$100000001;->this$0:Lcom/justhack/hackapk/Screenshot;
 
     move-object v8, v0
 
     move-object v9, v2
 
-    iput-object v9, v8, Lcom/hax4us/haxrat/Screenshot$100000001;->val$mediaProjection:Landroid/media/projection/MediaProjection;
+    iput-object v9, v8, Lcom/justhack/hackapk/Screenshot$100000001;->val$mediaProjection:Landroid/media/projection/MediaProjection;
 
     move-object v8, v0
 
     move v9, v3
 
-    iput v9, v8, Lcom/hax4us/haxrat/Screenshot$100000001;->val$width:I
+    iput v9, v8, Lcom/justhack/hackapk/Screenshot$100000001;->val$width:I
 
     move-object v8, v0
 
     move v9, v4
 
-    iput v9, v8, Lcom/hax4us/haxrat/Screenshot$100000001;->val$height:I
+    iput v9, v8, Lcom/justhack/hackapk/Screenshot$100000001;->val$height:I
 
     move-object v8, v0
 
     move-object v9, v5
 
-    iput-object v9, v8, Lcom/hax4us/haxrat/Screenshot$100000001;->val$windowSize:Landroid/graphics/Point;
+    iput-object v9, v8, Lcom/justhack/hackapk/Screenshot$100000001;->val$windowSize:Landroid/graphics/Point;
 
     move-object v8, v0
 
     move-object v9, v6
 
-    iput-object v9, v8, Lcom/hax4us/haxrat/Screenshot$100000001;->val$virtualDisplay:Landroid/hardware/display/VirtualDisplay;
+    iput-object v9, v8, Lcom/justhack/hackapk/Screenshot$100000001;->val$virtualDisplay:Landroid/hardware/display/VirtualDisplay;
 
     return-void
 .end method
 
-.method static access$0(Lcom/hax4us/haxrat/Screenshot$100000001;)Lcom/hax4us/haxrat/Screenshot;
+.method static access$0(Lcom/justhack/hackapk/Screenshot$100000001;)Lcom/justhack/hackapk/Screenshot;
     .locals 4
 
     move-object v0, p0
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/Screenshot$100000001;->this$0:Lcom/hax4us/haxrat/Screenshot;
+    iget-object v3, v3, Lcom/justhack/hackapk/Screenshot$100000001;->this$0:Lcom/justhack/hackapk/Screenshot;
 
     move-object v0, v3
 
@@ -144,12 +144,12 @@
     .line 88
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/Screenshot$100000001;->val$mediaProjection:Landroid/media/projection/MediaProjection;
+    iget-object v3, v3, Lcom/justhack/hackapk/Screenshot$100000001;->val$mediaProjection:Landroid/media/projection/MediaProjection;
 
     invoke-virtual {v3}, Landroid/media/projection/MediaProjection;->stop()V
 
     .line 89
-    new-instance v3, Lcom/hax4us/haxrat/Screenshot$100000001$100000000;
+    new-instance v3, Lcom/justhack/hackapk/Screenshot$100000001$100000000;
 
     move-object v11, v3
 
@@ -163,27 +163,27 @@
 
     move-object v7, v0
 
-    iget v7, v7, Lcom/hax4us/haxrat/Screenshot$100000001;->val$width:I
+    iget v7, v7, Lcom/justhack/hackapk/Screenshot$100000001;->val$width:I
 
     move-object v8, v0
 
-    iget v8, v8, Lcom/hax4us/haxrat/Screenshot$100000001;->val$height:I
+    iget v8, v8, Lcom/justhack/hackapk/Screenshot$100000001;->val$height:I
 
     move-object v9, v0
 
-    iget-object v9, v9, Lcom/hax4us/haxrat/Screenshot$100000001;->val$windowSize:Landroid/graphics/Point;
+    iget-object v9, v9, Lcom/justhack/hackapk/Screenshot$100000001;->val$windowSize:Landroid/graphics/Point;
 
     move-object v10, v0
 
-    iget-object v10, v10, Lcom/hax4us/haxrat/Screenshot$100000001;->val$virtualDisplay:Landroid/hardware/display/VirtualDisplay;
+    iget-object v10, v10, Lcom/justhack/hackapk/Screenshot$100000001;->val$virtualDisplay:Landroid/hardware/display/VirtualDisplay;
 
-    invoke-direct/range {v4 .. v10}, Lcom/hax4us/haxrat/Screenshot$100000001$100000000;-><init>(Lcom/hax4us/haxrat/Screenshot$100000001;Landroid/media/ImageReader;IILandroid/graphics/Point;Landroid/hardware/display/VirtualDisplay;)V
+    invoke-direct/range {v4 .. v10}, Lcom/justhack/hackapk/Screenshot$100000001$100000000;-><init>(Lcom/justhack/hackapk/Screenshot$100000001;Landroid/media/ImageReader;IILandroid/graphics/Point;Landroid/hardware/display/VirtualDisplay;)V
 
     const/4 v4, 0x0
 
     new-array v4, v4, [Ljava/lang/Void;
 
-    invoke-virtual {v3, v4}, Lcom/hax4us/haxrat/Screenshot$100000001$100000000;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v3, v4}, Lcom/justhack/hackapk/Screenshot$100000001$100000000;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     move-result-object v3
 
