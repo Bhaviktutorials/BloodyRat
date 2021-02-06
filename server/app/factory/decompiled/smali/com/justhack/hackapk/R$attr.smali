@@ -1,11 +1,11 @@
-.class public final Lcom/hax4us/haxrat/R$attr;
+.class public final Lcom/justhack/hackapk/R$attr;
 .super Ljava/lang/Object;
 .source "R.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/R;
+    value = Lcom/justhack/hackapk/R;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
