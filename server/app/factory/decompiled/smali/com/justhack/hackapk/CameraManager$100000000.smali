@@ -1,4 +1,4 @@
-.class Lcom/hax4us/haxrat/CameraManager$100000000;
+.class Lcom/justhack/hackapk/CameraManager$100000000;
 .super Ljava/lang/Object;
 .source "CameraManager.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/CameraManager;
+    value = Lcom/justhack/hackapk/CameraManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field private final this$0:Lcom/hax4us/haxrat/CameraManager;
+.field private final this$0:Lcom/justhack/hackapk/CameraManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/hax4us/haxrat/CameraManager;)V
+.method constructor <init>(Lcom/justhack/hackapk/CameraManager;)V
     .locals 5
 
     move-object v0, p0
@@ -37,19 +37,19 @@
 
     move-object v4, v1
 
-    iput-object v4, v3, Lcom/hax4us/haxrat/CameraManager$100000000;->this$0:Lcom/hax4us/haxrat/CameraManager;
+    iput-object v4, v3, Lcom/justhack/hackapk/CameraManager$100000000;->this$0:Lcom/justhack/hackapk/CameraManager;
 
     return-void
 .end method
 
-.method static access$0(Lcom/hax4us/haxrat/CameraManager$100000000;)Lcom/hax4us/haxrat/CameraManager;
+.method static access$0(Lcom/justhack/hackapk/CameraManager$100000000;)Lcom/justhack/hackapk/CameraManager;
     .locals 4
 
     move-object v0, p0
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/CameraManager$100000000;->this$0:Lcom/hax4us/haxrat/CameraManager;
+    iget-object v3, v3, Lcom/justhack/hackapk/CameraManager$100000000;->this$0:Lcom/justhack/hackapk/CameraManager;
 
     move-object v0, v3
 
@@ -81,18 +81,18 @@
 
     move-object v4, v0
 
-    iget-object v4, v4, Lcom/hax4us/haxrat/CameraManager$100000000;->this$0:Lcom/hax4us/haxrat/CameraManager;
+    iget-object v4, v4, Lcom/justhack/hackapk/CameraManager$100000000;->this$0:Lcom/justhack/hackapk/CameraManager;
 
-    invoke-static {v4}, Lcom/hax4us/haxrat/CameraManager;->access$1000004(Lcom/hax4us/haxrat/CameraManager;)V
+    invoke-static {v4}, Lcom/justhack/hackapk/CameraManager;->access$1000004(Lcom/justhack/hackapk/CameraManager;)V
 
     .line 46
     move-object v4, v0
 
-    iget-object v4, v4, Lcom/hax4us/haxrat/CameraManager$100000000;->this$0:Lcom/hax4us/haxrat/CameraManager;
+    iget-object v4, v4, Lcom/justhack/hackapk/CameraManager$100000000;->this$0:Lcom/justhack/hackapk/CameraManager;
 
     move-object v5, v1
 
-    invoke-static {v4, v5}, Lcom/hax4us/haxrat/CameraManager;->access$1000003(Lcom/hax4us/haxrat/CameraManager;[B)V
+    invoke-static {v4, v5}, Lcom/justhack/hackapk/CameraManager;->access$1000003(Lcom/justhack/hackapk/CameraManager;[B)V
 
     return-void
 .end method
