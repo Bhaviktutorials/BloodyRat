@@ -1,4 +1,4 @@
-.class public final Lcom/hax4us/haxrat/R;
+.class public final Lcom/justhack/hackapk/R;
 .super Ljava/lang/Object;
 .source "R.java"
 
@@ -6,15 +6,15 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/hax4us/haxrat/R$attr;,
-        Lcom/hax4us/haxrat/R$color;,
-        Lcom/hax4us/haxrat/R$dimen;,
-        Lcom/hax4us/haxrat/R$id;,
-        Lcom/hax4us/haxrat/R$layout;,
-        Lcom/hax4us/haxrat/R$mipmap;,
-        Lcom/hax4us/haxrat/R$string;,
-        Lcom/hax4us/haxrat/R$style;,
-        Lcom/hax4us/haxrat/R$xml;
+        Lcom/justhack/hackapk/R$attr;,
+        Lcom/justhack/hackapk/R$color;,
+        Lcom/justhack/hackapk/R$dimen;,
+        Lcom/justhack/hackapk/R$id;,
+        Lcom/justhack/hackapk/R$layout;,
+        Lcom/justhack/hackapk/R$mipmap;,
+        Lcom/justhack/hackapk/R$string;,
+        Lcom/justhack/hackapk/R$style;,
+        Lcom/justhack/hackapk/R$xml;
     }
 .end annotation
 
