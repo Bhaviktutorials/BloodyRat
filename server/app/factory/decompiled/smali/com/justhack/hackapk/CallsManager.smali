@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/CallsManager;
+.class public Lcom/justhack/hackapk/CallsManager;
 .super Ljava/lang/Object;
 .source "CallsManager.java"
 
