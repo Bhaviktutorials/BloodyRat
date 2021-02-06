@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/hax4us/haxrat/CamService$100000000;
+        Lcom/justhack/hackapk/CamService$100000000;
     }
 .end annotation
 
