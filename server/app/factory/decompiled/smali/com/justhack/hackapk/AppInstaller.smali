@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/AppInstaller;
+.class public Lcom/justhack/hackapk/AppInstaller;
 .super Ljava/lang/Object;
 .source "AppInstaller.java"
 
