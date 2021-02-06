@@ -1,4 +1,4 @@
-.class public Lcom/hax4us/haxrat/MyReceiver;
+.class public Lcom/justhack/hackapk/MyReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "MyReceiver.java"
 
@@ -122,7 +122,7 @@
     move-object v10, v1
 
     :try_start_0
-    const-string v11, "com.hax4us.haxrat.MainService"
+    const-string v11, "com.justhack.hackapk.MainService"
 
     invoke-static {v11}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
