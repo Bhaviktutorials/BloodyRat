@@ -413,7 +413,7 @@
 
     move-object/from16 v16, v0
 
-    invoke-static/range {v16 .. v16}, Lcom/justhack/hackapk/Screenshot$100000001;->access$0(Lcom/justhack/hackapk/Screenshot$100000001;)Lcom/hax4us/haxrat/Screenshot;
+    invoke-static/range {v16 .. v16}, Lcom/justhack/hackapk/Screenshot$100000001;->access$0(Lcom/justhack/hackapk/Screenshot$100000001;)Lcom/justhack/hackapk/Screenshot;
 
     move-result-object v16
 
