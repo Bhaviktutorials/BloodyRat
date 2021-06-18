@@ -7,6 +7,11 @@
 */
 
 console.log('The BloodyRat Server started! \nhttp://localhost:22533');
+var localIpV4Address = require("local-ipv4-address");
+ 
+localIpV4Address().then(function(ipAddress){
+    console.log("Your IP Address to build app is :  " + ipAddress);
+});
 
 const
     express = require('express'),
