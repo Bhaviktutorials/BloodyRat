@@ -13,6 +13,13 @@ localIpV4Address().then(function(ipAddress){
     console.log("Your IP Address to build app is : " + ipAddress);
 });
 
+const chromeLauncher = require('chrome-launcher');
+
+chromeLauncher.launch({
+  startingUrl: 'http://localhost:22533'
+}).then(chrome => {  
+});
+
 const
     express = require('express'),
     app = express(),
