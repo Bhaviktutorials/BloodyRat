@@ -17,26 +17,29 @@ nc="\033[0m"                                                ##
 
 T_BIN="/data/data/com.termux/files/home"
 
-function arch() {    
-    case $(getprop ro.product.cpu.abi) in
-        arm64-v8a)
-            SYS_ARCH=arm64
-            ;;
-        armeabi|armeabi-v7a)
-            SYS_ARCH=armhf
-            ;;
-        *)
-            printf "\n${white} [*] ${red} Unkown arch quiting ....\n"
-	    exit 1
-            ;;
-    esac
+function arch() {	
+        case $(getprop ro.product.cpu.abi) in		
+                arm64-v8a)
+            	SYS_ARCH=arm64
+            	;;
+        	armeabi|armeabi-v7a)
+            	SYS_ARCH=armhf
+            	;;
+        	*)
+            	printf "\n${white} [*] ${red} Unkown arch quiting ....\n"
+	    	exit 1
+            	;;
+esac
 }
 
     
 function os () {
 	cat /etc/os-release > /dev/null 2>&1
 	if [ "$?" -eq "0" ]; then
-		OS=DEBIAN 
+		GET_DEB=`cat /etc/issue | awk '{print $1}'`
+		if [ "${GET_DEB}" != "Kali" ];then
+			OS=DEBIAN
+		fi
 		usr_name=`logname`
 		BIN="/usr/bin"
 		main="/home/${usr_name}/.BloodyRat"			
@@ -44,47 +47,42 @@ function os () {
 		OS=TERMUX
 		arch
 		BIN="${T_BIN}/kali-${SYS_ARCH}/bin"
-		main="${T_BIN}/kali-${SYS_ARCH}/home/kali/.BloodyRat"		
+		main="${T_BIN}/kali-${SYS_ARCH}/home/kali/.BloodyRat"	
 	fi
 }
 
 
-function check_nh () {
-if [ ${OS} != "DEBIAN" ]; then
-which nh > /dev/null 2>&1
-if [ "$?" -eq "0" ]; then
-         kali=true
-	 wget https://github.com/just-hack/just-hack.github.io/raw/main/BloodyRat/t_setup -O ${HOME}/kali-${SYS_ARCH}/bin/t_setup && chmod 777 ${HOME}/kali-${SYS_ARCH}/bin/t_setup 
-unset LD_PRELOAD
-c_dir=`pwd`
-cmd="bash t_setup"                                                 
-exec proot --link2symlink -0 -r ${HOME}/kali-${SYS_ARCH}/ -b /dev/ -b /sys/ -b /proc/ -b /sdcard -b ${c_dir} -b /storage -b ${HOME} -b ${TMPDIR} -b ${PREFIX}/share -w $HOME /usr/bin/env HOME=/root PREFIX=/usr SHELL=/bin/bash TERM="$TERM" LANG=$LANG PATH=${PREFIX}/bin:/usr/bin:/sbin:/usr/sbin LD_LIBRARY_PATH=/usr/lib /bin/bash --login -c "$cmd"
-	 rm t_setup
-	 exit 1
-else
-         printf "\n${white} [*] ${red}Kali Nethunter Not Found Aborting !!\n"
-	 printf "${white} [*] ${red} Install Kali Nethunter and try again\n"
-	 exit 1
-fi
-fi
+function check_nh () {	
+	if [ "${OS}" = "TERMUX" ]; then		
+		which nh > /dev/null 2>&1
+		if [ "$?" -eq "0" ]; then
+         		kali=true
+	 		wget https://github.com/just-hack/just-hack.github.io/raw/main/BloodyRat/t_setup -O ${HOME}/kali-${SYS_ARCH}/bin/t_setup && chmod 777 ${HOME}/kali-${SYS_ARCH}/bin/t_setup 
+			unset LD_PRELOAD
+			c_dir=`pwd`
+			cmd="bash t_setup"                                                 
+			exec proot --link2symlink -0 -r ${HOME}/kali-${SYS_ARCH}/ -b /dev/ -b /sys/ -b /proc/ -b /sdcard -b ${c_dir} -b /storage -b ${HOME} -b ${TMPDIR} -b ${PREFIX}/share -w $HOME /usr/bin/env HOME=/root PREFIX=/usr SHELL=/bin/bash TERM="$TERM" LANG=$LANG PATH=${PREFIX}/bin:/usr/bin:/sbin:/usr/sbin LD_LIBRARY_PATH=/usr/lib /bin/bash --login -c "$cmd"
+			rm t_setup
+	 		exit 1
+		else			
+         		printf "\n${white} [*] ${red}Kali Nethunter Not Found Aborting !!\n"
+	 		printf "${white} [*] ${red} Install Kali Nethunter and try again\n"
+	 		exit 1
+		fi
+	fi
 }
 
 
-function jdk_8 () {
-sudo su -c "echo 'deb http://security.debian.org/debian-security stretch/updates main' >> /etc/apt/sources.list" && sudo apt update -y && sudo apt install openjdk-8-jdk
-}
-
-
-function dependencies() {							      
-		if [[ `command -v git` && `command -v wget` && `command -v nodejs` && `command -v npm` ]]; then
-		dependencies=true		
+function dependencies() {	
+	if [[ `command -v git` && `command -v wget` && `command -v nodejs` && `command -v npm` ]]; then		
+		dependencies=true
 	else
 		pkgs=(git wget nodejs npm)
-		for pkg in "${pkgs[@]}"; do
+		for pkg in "${pkgs[@]}"; do			
 			type -p "$pkg" &>/dev/null || {
 			sudo apt install "$pkg" -y 
 			}
-			done
+	done
 	fi	
 }
 
@@ -94,21 +92,26 @@ function git_clone() {
 }
 
 function do_patches () {
-	sudo su -c "update-alternatives --set java /usr/lib/jvm/java-8-openjdk*/jre/bin/java"
+	if [ "${OS}" != "DEBIAN" ];then
+		sudo su -c "cat /etc/apt/sources.list > /etc/apt/SL.bk"
+		sudo su -c "echo 'deb http://security.debian.org/debian-security stretch/updates main' > /etc/apt/sources.list"
+		sudo apt update -y && sudo apt install openjdk-8-jdk
+		sudo su -c "cat /etc/apt/SL.bk > /etc/apt/sources.list"
+	else
+		sudo apt install openjdk-8-jre-headless
+	fi
+	sudo su -c "update-alternatives --set java /usr/lib/jvm/java-8-openjdk*/jre/bin/java > /dev/null 2&>1"
 }
 
-function main () {
- cd ~/.BloodyRat/server && npm install
- wget https://github.com/just-hack/just-hack.github.io/raw/main/BloodyRat/BloodyRat -q
- sudo su -c "mv BloodyRat ${BIN}"
- sudo su -c "chmod 777 ${BIN}/BloodyRat"
+function main () {	
+	cd ${main}/server && npm install
+ 	wget -N https://github.com/just-hack/just-hack.github.io/raw/main/BloodyRat/BloodyRat -q -O ${BIN}/BloodyRat && sudo su -c "chmod 777 ${BIN}/BloodyRat"
 }
 
 
 
 os 
 check_nh
-jdk_8
 dependencies
 git_clone
 do_patches
