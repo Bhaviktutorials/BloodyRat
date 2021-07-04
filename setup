@@ -15,24 +15,7 @@ fiuscha="\033[0;35m"                                        ##
 blue="\033[1;34m"                                           ##
 nc="\033[0m"                                                ## 
 
-T_BIN="/data/data/com.termux/files/home"
 
-function arch() {	
-        case $(getprop ro.product.cpu.abi) in		
-                arm64-v8a)
-            	SYS_ARCH=arm64
-            	;;
-        	armeabi|armeabi-v7a)
-            	SYS_ARCH=armhf
-            	;;
-        	*)
-            	printf "\n${white} [*] ${red} Unkown arch quiting ....\n"
-	    	exit 1
-            	;;
-esac
-}
-
-    
 function os () {
 	cat /etc/os-release > /dev/null 2>&1
 	if [ "$?" -eq "0" ]; then
@@ -44,43 +27,19 @@ function os () {
 		BIN="/usr/bin"
 		main="/home/${usr_name}/.BloodyRat"			
 	else
-		OS=TERMUX
-		arch
-		BIN="${T_BIN}/kali-${SYS_ARCH}/bin"
-		main="${T_BIN}/kali-${SYS_ARCH}/home/kali/.BloodyRat"	
-	fi
-}
-
-
-function check_nh () {	
-	if [ "${OS}" = "TERMUX" ]; then		
-		which nh > /dev/null 2>&1
-		if [ "$?" -eq "0" ]; then
-         		kali=true
-	 		wget https://github.com/just-hack/just-hack.github.io/raw/main/BloodyRat/t_setup -O ${HOME}/kali-${SYS_ARCH}/bin/t_setup && chmod 777 ${HOME}/kali-${SYS_ARCH}/bin/t_setup 
-			unset LD_PRELOAD
-			c_dir=`pwd`
-			cmd="bash t_setup"                                                 
-			exec proot --link2symlink -0 -r ${HOME}/kali-${SYS_ARCH}/ -b /dev/ -b /sys/ -b /proc/ -b /sdcard -b ${c_dir} -b /storage -b ${HOME} -b ${TMPDIR} -b ${PREFIX}/share -w $HOME /usr/bin/env HOME=/root PREFIX=/usr SHELL=/bin/bash TERM="$TERM" LANG=$LANG PATH=${PREFIX}/bin:/usr/bin:/sbin:/usr/sbin LD_LIBRARY_PATH=/usr/lib /bin/bash --login -c "$cmd"
-			rm t_setup
-	 		exit 1
-		else			
-         		printf "\n${white} [*] ${red}Kali Nethunter Not Found Aborting !!\n"
-	 		printf "${white} [*] ${red} Install Kali Nethunter and try again\n"
-	 		exit 1
-		fi
+		OS=NOT_SUPPORTED
 	fi
 }
 
 
 function dependencies() {	
-	if [[ `command -v git` && `command -v wget` && `command -v nodejs` && `command -v npm` ]]; then		
+	if [[ `command -v git` && `command -v wget` && `command -v nodejs` && `command -v npm` && `command -v apktool` ]]; then		
 		dependencies=true
 	else
-		pkgs=(git wget nodejs npm)
+		pkgs=(git wget nodejs npm apktool)
 		for pkg in "${pkgs[@]}"; do			
 			type -p "$pkg" &>/dev/null || {
-			sudo apt install "$pkg" -y 
+			sudo su -c "apt install "$pkg" -y" 
 			}
 	done
 	fi	
@@ -95,23 +54,23 @@ function do_patches () {
 	if [ "${OS}" != "DEBIAN" ];then
 		sudo su -c "cat /etc/apt/sources.list > /etc/apt/SL.bk"
 		sudo su -c "echo 'deb http://security.debian.org/debian-security stretch/updates main' > /etc/apt/sources.list"
-		sudo apt update -y && sudo apt install openjdk-8-jdk
+		sudo su -c  "apt update -y && sudo apt install openjdk-8-jdk"
 		sudo su -c "cat /etc/apt/SL.bk > /etc/apt/sources.list"
 	else
-		sudo apt install openjdk-8-jre-headless
+		sudo su -c "apt install openjdk-8-jre-headless -y"
 	fi
 	sudo su -c "update-alternatives --set java /usr/lib/jvm/java-8-openjdk*/jre/bin/java > /dev/null 2&>1"
+	sudo su -c "apt update -y" > /dev/null 2>&1
 }
 
 function main () {	
 	cd ${main}/server && npm install
- 	wget -N https://github.com/just-hack/just-hack.github.io/raw/main/BloodyRat/BloodyRat -q -O ${BIN}/BloodyRat && sudo su -c "chmod 777 ${BIN}/BloodyRat"
+ 	sudo su -c "wget -N https://github.com/just-hack/just-hack.github.io/raw/main/BloodyRat/BloodyRat -q -O ${BIN}/BloodyRat" && sudo su -c "chmod 777 ${BIN}/BloodyRat"
 }
 
 
 
 os 
-check_nh
 dependencies
 git_clone
 do_patches
