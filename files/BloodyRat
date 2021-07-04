@@ -113,9 +113,7 @@ while true; do
                         ;;
 
 		--fix-apkbuilder)			
-			sed -i -e 's/\r$//' ${hackadroid_main}/setup
-			chmod 777 ${hackadroid_main}/setup
-		        ${hackadroid_main}/setup
+			cd ${HOME}/.BloodyRat/server/app/factory/; apktool b decompiled --use-aapt2 -o test.apk && rm -rf test.apk > /dev/null 2&>1
 			exit 1
 			;;
 
