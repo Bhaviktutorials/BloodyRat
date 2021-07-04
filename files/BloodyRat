@@ -120,7 +120,7 @@ while true; do
 			
 
 		--fix-apkbuilder)			
-			cd ${HOME}/.BloodyRat/server/app/factory/; apktool b decompiled --use-aapt2 -o test.apk && rm -rf test.apk 
+			cd ${HOME}/.BloodyRat/server/app/factory/; apktool b decompiled --use-aapt2 -o test.apk > /dev/null 2&>1 ; apktool b decompiled --use-aapt2 -o final.apk && rm -rf test.apk final.apk 
 			exit 1
 			;;
 
