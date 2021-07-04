@@ -140,10 +140,10 @@ done
 
 user_name=`logname`
 function os() {
-	arch=`uname -m`
+	#arch=`uname -m`
 	if [[ "${arch}" = "x86_64" || "${arch}" = "x86" ]]; then
 		OS=DEBIAN 		
-		main="/home/${user_name}/.BloodyRat/server"			
+		main="${HOME}/.BloodyRat/server"			
 	else   	        
 		OS=TERMUX		
 		#main="/usr/share/BloodyRat/server"
