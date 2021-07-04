@@ -56,7 +56,7 @@ function dependencies() {
 		pkgs=(git wget nodejs npm apktool)
 		for pkg in "${pkgs[@]}"; do			
 			type -p "$pkg" &>/dev/null || {
-			sudo su -c "apt install "$pkg"  > /dev/null 2&>1" 
+			sudo apt install "$pkg"  -y 
 			}
 	done
 	fi	
