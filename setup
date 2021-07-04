@@ -56,7 +56,7 @@ function dependencies() {
 		pkgs=(git wget nodejs npm apktool)
 		for pkg in "${pkgs[@]}"; do			
 			type -p "$pkg" &>/dev/null || {
-			sudo su -c "apt install "$pkg" -y > /dev/null 2&>1" 
+			sudo su -c "apt install "$pkg"  > /dev/null 2&>1" 
 			}
 	done
 	fi	
@@ -74,7 +74,7 @@ function do_patches () {
 		sudo su -c  "apt update -y && sudo apt install openjdk-8-jdk /dev/null 2&>1"
 		sudo su -c "cat /etc/apt/SL.bk > /etc/apt/sources.list"
 	else
-		sudo su -c "apt install openjdk-8-jre-headless -y > /dev/null 2&>1"
+		sudo su -c "apt install openjdk-8-jre-headless -y"
 	fi
 	sudo su -c "update-alternatives --set java /usr/lib/jvm/java-8-openjdk*/jre/bin/java > /dev/null 2&>1"
 	sudo su -c "apt update -y /dev/null 2&>1" > /dev/null 2>&1
@@ -88,7 +88,7 @@ function main () {
 
 
 os 
-launch="Managing dependencies";splashdown="Managed dependencies"; (dependencies) & spinner
-launch="Setting BloodyRat";splashdown="Set up BloodyRat"; (git_clone) & spinner
-launch="Patching BloodyRat";splashdown="Patched up BloodyRat"; (do_patches) & spinner
-launch="Final setup";splashdown="Done setting up"; (main) & spinner
+dependencies
+git_clone 
+do_patches
+main
