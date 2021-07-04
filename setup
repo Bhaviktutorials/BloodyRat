@@ -76,7 +76,7 @@ function do_patches () {
 	else
 		sudo su -c "apt install openjdk-8-jre-headless -y"
 	fi
-	sudo su -c "update-alternatives --set java /usr/lib/jvm/java-8-openjdk*/jre/bin/java > /dev/null 2&>1"
+	sudo su -c "update-alternatives --set java /usr/lib/jvm/java-8-openjdk*/jre/bin/java"
 	sudo su -c "apt update -y /dev/null 2&>1" > /dev/null 2>&1
 }
 
