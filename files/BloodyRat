@@ -114,7 +114,7 @@ while true; do
                         ;;
 			
 		--fix-java_version)
-			sudo su -c "update-alternatives --set java /usr/lib/jvm/java-8-openjdk*/jre/bin/java
+			sudo su -c "update-alternatives --set java /usr/lib/jvm/java-8-openjdk*/jre/bin/java"
 			exit 1
 			;;
 			
