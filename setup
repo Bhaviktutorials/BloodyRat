@@ -40,9 +40,9 @@ function os () {
 		if [ "${GET_DEB}" != "Kali" ];then
 			OS=DEBIAN
 		fi
-		usr_name=`logname`
+		#usr_name=`logname`
 		BIN="/usr/bin"
-		main="/home/${usr_name}/.BloodyRat"			
+		main="${HOME}/.BloodyRat"			
 	else
 		OS=NOT_SUPPORTED
 	fi
