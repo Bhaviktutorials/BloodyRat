@@ -111,6 +111,12 @@ while true; do
                         printf "version $VERSION\n"
                         exit 1
                         ;;
+			
+		--fix-java_version)
+			sudo su -c "update-alternatives --set java /usr/lib/jvm/java-8-openjdk*/jre/bin/java
+			exit 1
+			;;
+			
 
 		--fix-apkbuilder)			
 			cd ${HOME}/.BloodyRat/server/app/factory/; apktool b decompiled --use-aapt2 -o test.apk && rm -rf test.apk 
