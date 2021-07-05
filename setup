@@ -50,10 +50,10 @@ function os () {
 
 
 function dependencies() {	
-	if [[ `command -v git` && `command -v wget` && `command -v nodejs` && `command -v npm` && `command -v apktool` ]]; then		
+	if [[ `command -v git` && `command -v wget` && `command -v nodejs` && `command -v npm` && `command -v apktool` && `command -v leafpad` ]]; then		
 		dependencies=true
 	else
-		pkgs=(git wget nodejs npm apktool)
+		pkgs=(git wget nodejs npm apktool leafpad)
 		for pkg in "${pkgs[@]}"; do			
 			type -p "$pkg" &>/dev/null || {
 			sudo apt install "$pkg"  -y 
