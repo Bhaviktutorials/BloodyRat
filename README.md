@@ -34,12 +34,21 @@ Infect Anyone
 
 ---
 ## <p align="center">  <img src="https://media.giphy.com/media/uugJfdvVsI4CHPl5a3/giphy.gif" alt="GitHub" width="150" height="100">
-#### <p>• Get Location </p>
-#### <p>•  </p>
-#### <p>•  </p>
-#### <p>•  </p>
-#### <p>•  </p>
-#### <p>•  </p>
+#### <p>• GPS </p>
+#### <p>• Microphone </p>
+#### <p>• Contacts </p>
+#### <p>• Call Logs </p>
+#### <p>• Clipboard Log </p>
+#### <p>• Notification Log </p>
+#### <p>• SMS Manager </p>
+#### <p>• Wifi Manager </p>
+#### <p>• Installed Apps </p>
+#### <p>• Allowed Permission </p>
+#### <p>• File Explorer/Internal Storage </p>
+#### <p>• ScreenShot </p>
+#### <p>• ScreenRecord </p>
+#### <p>• RearCam </p>
+#### <p>• FrontCam </p>
 ---
 ### <p align="center"> <img src="https://media.giphy.com/media/l41YmiCZ8HXvVl5M4/giphy.gif" alt="Instagram" width="80" height="80" > **Instagram Tutorial :-**
 
