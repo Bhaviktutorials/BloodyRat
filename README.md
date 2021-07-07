@@ -65,7 +65,7 @@ Infect Anyone
 | ----------  | --------- | ----------- |
 | <p align="center">-h          | <p align="center"> --help    | <p align="center"> show this help message and exit |
 | <p align="center"> -u  | <p align="center"> --update | <p align="center"> Update Bloody Rat |
-| <p align="center"> -v | --version | Display the current Bloody Rat Version installed in Device |
+| <p align="center"> -v | <p align="center"> --version | <p align="center"> Display the current Bloody Rat Version installed in Device |
 |  <p align="center"> | <p align="center"> --fix-apkbuilder | <p align="center"> Fix aapt2 path to build apk |
 | <p align="center">  | <p align="center"> --fix -java_version   | <p align="center"> Fix java Version to 1.8.0 |
 
