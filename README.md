@@ -34,12 +34,12 @@ Infect Anyone
 
 ---
 ## <p align="center">  <img src="https://media.giphy.com/media/uugJfdvVsI4CHPl5a3/giphy.gif" alt="GitHub" width="150" height="100">
-#### <p align="center">• Invisible icon on install </p>
-#### <p align="center">• FUD (Bypass play protect) </p>
-#### <p align="center">• Browse call logs and SMS logs </p>
-#### <p align="center">• Light weight apk which runs 24*7 in background </p>
-#### <p align="center">• Can record audio, video, take picture from both camera </p>
-#### <p align="center">• Get current location, sim card details ,ip, mac address of the device </p>
+#### <p>• Get Location </p>
+#### <p>•  </p>
+#### <p>•  </p>
+#### <p>•  </p>
+#### <p>•  </p>
+#### <p>•  </p>
 ---
 ### <p align="center"> <img src="https://media.giphy.com/media/l41YmiCZ8HXvVl5M4/giphy.gif" alt="Instagram" width="80" height="80" > **Instagram Tutorial :-**
 
