@@ -55,9 +55,22 @@ Infect Anyone
 #### <p align="center"> [**IGTV**]()
 ---
 ### Getting Started 🦸
+### Supported OS
+| Platform | Support Status |
+|---|---|
+Windows XP | Supported
+Windows 7 | Supported
+Windows 8 | Supported
+Windows 10 | Supported
+Linux kali,ubuntu,Parrot | Supported
+Android | Support
 
+### Windows
+
+### Linux 
 #### <p align="center"> ```wget -N https://github.com/Bhaviktutorials/BloodyRat/raw/main/setup```
 #### <p align="center"> ``` bash setup```
+
 ### Available Arguments
 * Optional Arguments
 
@@ -69,6 +82,9 @@ Infect Anyone
 |  <p align="center"> | <p align="center"> --fix-apkbuilder | <p align="center"> Fix aapt2 path to build apk |
 | <p align="center">  | <p align="center"> --fix -java_version   | <p align="center"> Fix java Version to 1.8.0 |
 
+### Android
+
+### Cloud Shell 
 ***
 ## <p align="center"> Workflow ⚙️
 <br>
