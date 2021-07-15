@@ -58,7 +58,7 @@ Android | Support
 Note :- Turn off Antivirus Before Downloading Zip File    
 ##### Requirements:- **Java 8** , **Node.js**
 
-##### Download:- [**Java**](https://www.java.com/en/download/manual.jsp) [**Node.js**](https://nodejs.org/en/download/)    
+##### Download:- [**Java**](https://www.oracle.com/java/technologies/javase-jre8-downloads.html) [**Node.js**](https://nodejs.org/en/download/)    
 
 ##### Installation:-
 
