@@ -51,7 +51,9 @@ Windows 8 | Supported
 Windows 10 | Supported
 Linux kali,ubuntu,Parrot | Supported
 Android | Support
-
+  
+---
+  
 ### Windows <img src="https://media.giphy.com/media/l2ECXx80AOmXK/giphy.gif" alt="Instagram" width="50" height="30" >
 <p style="color: #FD1C03;"> ⚠️ Turn off Antivirus Before Downloading Zip File ⚠️ </p>
 
