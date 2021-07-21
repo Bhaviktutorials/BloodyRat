@@ -102,14 +102,7 @@ Android | Support
 
 ***
 ## <p align="center">  <img src="https://user-images.githubusercontent.com/64035221/126526262-74dbf469-013e-461d-a1af-d6c32ab9045c.png" width="" height="">
- - Inspiration for the project and the basic building blocks for the Android App are based off [AhMyth](https://github.com/AhMyth/AhMyth-Android-RAT) 
- - [express](https://github.com/expressjs/express)
- - [node-geoip](https://github.com/bluesmoon/node-geoip)
- - [lowdb](https://github.com/typicode/lowdb)
- - [socket.io](https://github.com/socketio/socket.io)
- - [Open Street Map](https://www.openstreetmap.org)
- - [Leaflet](https://leafletjs.com/)
-
+## <p align="center">  <img src="https://user-images.githubusercontent.com/64035221/126530805-a6c179f0-8bba-4edc-af45-9c1d97b89aa1.png" width="" height="">
 ***
 ## <p align="center"> Support <img src="https://user-images.githubusercontent.com/64035221/113476039-61b21c80-9496-11eb-93d1-97a97f6acaa6.png" width="30" height="30">
 <table align="center" style="border:1px solid black;margin-left:auto;margin-right:auto;">
