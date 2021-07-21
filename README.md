@@ -102,7 +102,7 @@ Android | Support
 
 ***
 ## <p align="center">  <img src="https://user-images.githubusercontent.com/64035221/126526262-74dbf469-013e-461d-a1af-d6c32ab9045c.png" width="" height="">
-## <p align="center">  <img src="https://user-images.githubusercontent.com/64035221/126530805-a6c179f0-8bba-4edc-af45-9c1d97b89aa1.png" width="" height="">
+## <p align="center">  <img src="https://user-images.githubusercontent.com/64035221/126532723-9737eb5e-40c3-48e1-98cc-ec15bda8a4ce.png" width="" height="">
 ***
 ## <p align="center"> Support <img src="https://user-images.githubusercontent.com/64035221/113476039-61b21c80-9496-11eb-93d1-97a97f6acaa6.png" width="30" height="30">
 <table align="center" style="border:1px solid black;margin-left:auto;margin-right:auto;">
