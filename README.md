@@ -43,6 +43,8 @@ Infect Anyone
 
 #### <p align="center"> [**IGTV**]()
 ---
+ ## <p align="center">  <img src="https://user-images.githubusercontent.com/64035221/126597231-8952bbdc-51b4-4e27-80db-1ef43eae643c.png" width="" height="">
+ 
 ### Getting Started 🦸
 ### Supported OS
 | Platform | Support Status |
