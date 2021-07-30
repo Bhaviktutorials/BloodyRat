@@ -41,7 +41,7 @@ Infect Anyone
 ---
 ### <p align="center"> <img src="https://media.giphy.com/media/l41YmiCZ8HXvVl5M4/giphy.gif" alt="Instagram" width="80" height="80" > **Instagram Tutorial :-**
 
-#### <p align="center"> [**IGTV**]()
+#### <p align="center"> [**IGTV**](https://www.instagram.com/tv/CR9OP8ygCHt/)
 ---
  ## <p align="center">  <img src="https://user-images.githubusercontent.com/64035221/126597231-8952bbdc-51b4-4e27-80db-1ef43eae643c.png" width="" height="">
  
