@@ -85,7 +85,7 @@ Android | Support
 | <p align="center"> -u  | <p align="center"> --update | <p align="center"> Update Bloody Rat |
 | <p align="center"> -v | <p align="center"> --version | <p align="center"> Display the current Bloody Rat Version installed in Device |
 |  <p align="center"> | <p align="center"> --fix-apkbuilder | <p align="center"> Fix aapt2 path to build apk |
-| <p align="center">  | <p align="center"> --fix -java_version   | <p align="center"> Fix java Version to 1.8.0 |
+| <p align="center">  | <p align="center"> --fix-java_version   | <p align="center"> Fix java Version to 1.8.0 |
 ---
 
 ### Android <img src="https://tenor.com/view/droidcon-synesthesia-android-gif-18815626.gif" alt="Instagram" width="80" height="50" >
