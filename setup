@@ -71,7 +71,7 @@ function do_patches () {
 	if [ "${OS}" != "DEBIAN" ];then
 		sudo su -c "cat /etc/apt/sources.list > /etc/apt/SL.bk"
 		sudo su -c "echo 'deb http://security.debian.org/debian-security stretch/updates main' > /etc/apt/sources.list"
-		sudo su -c  "apt update -y && sudo apt install openjdk-8-jdk /dev/null 2&>1"
+		sudo su -c  "apt update -y && sudo apt install openjdk-8-jdk -y /dev/null 2&>1"
 		sudo su -c "cat /etc/apt/SL.bk > /etc/apt/sources.list"
 	else
 		sudo su -c "apt install openjdk-8-jre-headless -y"
