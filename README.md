@@ -62,7 +62,7 @@ Android | Support
 #### Prerequisite:- **Java 8** , **Node.js**
 
 #### <p style="color:#FF6700;"> Step 1 : Download java Version 8 according to your supported arch </p>
- [**Click Here**](https://www.java.com/en/download/manual.jsp)
+ [**Click Here**](https://www.oracle.com/java/technologies/downloads/#java8-windows)
 
 #### <p style="color:#FF6700;"> Step 2 : Download Node.js according to your supported arch </p>
  [**Click Here**](https://nodejs.org/en/download/)
